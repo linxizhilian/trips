@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90530346-3fd3-450f-be1c-2e1024a750a4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CI/appadmin/config/database.php" afterPath="$PROJECT_DIR$/CI/appadmin/config/database.php" />
-    </list>
+    <list default="true" id="90530346-3fd3-450f-be1c-2e1024a750a4" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,12 +123,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1503538301242</updated>
-      <workItem from="1503538302448" duration="83000" />
+      <workItem from="1503538302448" duration="284000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83000" />
+    <option name="totallyTimeSpent" value="284000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="2" width="1612" height="865" extended-state="0" />
