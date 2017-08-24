@@ -155,7 +155,7 @@
                             <ul class="nav nav-pills nav-stacked">
                                 <li><a href="/Article/lists">文章列表</a></li>
                                 <li><a href="/Article/add">新增文章</a></li>
-                                <li><a href="/Article/eidt">文章编辑</a></li>
+                                <li><a href="/Article/edit">文章编辑</a></li>
                             </ul>
                         </li>
 

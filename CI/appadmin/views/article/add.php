@@ -1,3 +1,7 @@
-<?php require_once('/header.php'); ?>
-文章新增
-<?php require_once('/footer.php'); ?>
+<?php
+$this->load->view('header');
+?>
+	新增文章
+<?php
+$this->load->view('footer');
+?>
