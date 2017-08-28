@@ -1,0 +1,76 @@
+/**
+  * 用户存放minix方法
+  */
+
+// 相对浮动
+.absolute (@top: auto, @right: auto, @bottom: auto, @left: auto, @zIndex: 0) {
+  position: absolute;
+  top: @top;
+  right: @right;
+  bottom: @bottom;
+  left: @left;
+  z-index: @zIndex;
+}
+
+// 绝对浮动
+.fixed (@top: auto, @right: auto, @bottom: auto, @left: auto, @zIndex: 0) {
+  position: fixed;
+  top: @top;
+  right: @right;
+  bottom: @bottom;
+  left: @left;
+  z-index: @zIndex;
+}
+// 居中
+.abs-center {
+  .absolute(0, 0, 0, 0, 1);
+}
+// 居中 - 纵向
+.abs-center-y {
+  .absolute(50%, auto, auto, auto, 1);
+  transform: translateY(-50%);
+}
+
+// 居中 - 横向
+.abs-center-x {
+  .absolute(auto, auto, auto, 50%, 1);
+  transform: translateX(-50%);
+}
+.animation (@params) {
+  -webkit-animation: @params;
+  -moz-animation: @params;
+  animation: @params;
+}
+
+.animation-delay (@params) {
+  -webkit-animation-delay: @params;
+  -moz-animation-delay: @params;
+  animation-delay: @params;
+}
+
+.transform (@params) {
+  -webkit-transform: @params;
+  -moz-transform: @params;
+  transform: @params;
+}
+
+.transition (@params) {
+  -webkit-transition: @params;
+  -moz-transition: @params;
+  transition: @params;
+}
+//单行及多行文本溢出控制
+.singleLimitWidth() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.doubleLimitWidth(@num:2) {
+  display: -webkit-box !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:@num;
+}

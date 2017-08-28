@@ -27,7 +27,7 @@ $config['base_url'] = '';
 
 /*
 |--------------------------------------------------------------------------
-| Index File
+| Home File
 |--------------------------------------------------------------------------
 |
 | Typically this will be your index.php file, unless you've renamed it to

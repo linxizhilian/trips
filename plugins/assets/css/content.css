@@ -1,0 +1,630 @@
+@charset "utf-8";
+/* CSS Document */
+/*common Style - start*/
+.logo{ width:1000px; margin:0 auto; height:100px; position:relative;}
+.logo h1{ width:190px; height:80px; overflow:hidden; text-indent:-3000px; background:url(http://s.lelezone.com/baike/images/logo.png) no-repeat left center/contain ; position:absolute; left:0px; top:10px;}
+.logo>div{ width:190px; height:80px; overflow:hidden; text-indent:-3000px; background:url(http://s.lelezone.com/baike/images/logo.png) no-repeat left center/contain; position:absolute; left:0px; top:10px;}
+.logo h1.t{ width:200px; height:80px; overflow:hidden; text-indent:-3000px; background:url(http://s.lelezone.com/baike/images/baikelogo.png) no-repeat 0px 0px; position:absolute; left:0px; top:10px;}
+.logo div.t{ width:200px; height:80px; overflow:hidden; text-indent:-3000px; background:url(http://s.lelezone.com/baike/images/baikelogo.png) no-repeat 0px 0px; position:absolute; left:0px; top:10px;}
+.logo h1 a{ display:block; width:100%; height:100%;}
+.logo a{ position:absolute; right:0px; top:10px;}
+
+.nav{ width:100%; height:44px; background:#FD9229; }
+.nav div{ width:1000px; margin:0 auto;}
+.nav ul{ float:left;}
+.nav ul li{ width:100px; text-align:center; float:left;}
+.nav ul li.active{ background:#F5692C;}
+.nav ul li a{ color:#fff; font-weight:bold; font-size:18px; line-height:44px;}
+.nav .search{ width:300px; float:right;}
+.nav .search form{ width:100%; height:32px; background:#D6710D; margin-top:6px; position:relative;}
+.nav .search form input{ color:#fff; font-size:12px; height:32px; line-height:32px; text-indent:4px; background:none;}
+.nav .search form input.text{ width:100%;}
+.nav .search form input.btn{ width:60px; height:32px; background:url(http://s.lelezone.com/baike/images/sprites-header.png) no-repeat -192px 6px; cursor:pointer; position:absolute; right:0px; top:0px;}
+.nav .search form span{ position:absolute; display:block; border-right:solid 1px #fff; height:16px; right:61px; top:8px;}
+
+.comList{ width:1000px; height:110px; _overflow:hidden; margin:10px auto 0px; background:#F8F8F8;}
+
+.content{ width:1000px; margin:10px auto;}
+.content .ie6{ padding:10px 0; position:relative;}
+.contentTop{ border-top:solid 2px #ddd;}
+.banner{ width:360px; background:#fff; overflow:hidden;}
+.focus,.comment{ width:310px; _overflow:hidden; margin-left:10px;}
+
+.title{ height:50px; line-height:50px; border-bottom:solid 2px #000; position:relative; background:url(http://s.lelezone.com/baike/images/title.png) no-repeat;}
+.photoTitle{ height:50px; line-height:50px; border-bottom:solid 2px #000; position:relative; background:url(http://s.lelezone.com/baike/images/ico-11.png) no-repeat;}
+.title .titleList{ position:absolute; top:0px; right:0px; height:50px;}
+.title .titleAfter{ font-size:18px; position:absolute; left:4px; top:0px; }
+.title .titleAfter a{ color:#333; font-weight:bold;}
+.title .titleList a , .title .titleList span{ float:left; font-size:16px; color:#666; margin-right:10px;}
+.title .titleList a h3 { font-weight:normal; font-size:16px; color:#666; }
+.title .titleList a h2{ color:#f60;}
+.title .titleList span{ font-size:12px;}
+.title .titleList a:hover{ color:#f60;}
+
+.box{ padding:10px 0px;}
+.photoBox{ padding:10px 0px; top:0px; left:0px; width:1030px; overflow:hidden;}
+
+.img{ height:360px;}
+.img .left{ width:240px; height:360px;}
+.img .right{ width:760px; height:360px;}
+.images{ width:100%; height:100%; position:relative; }
+.images a{ display:block;}
+.images img{ width:100%; height:100%; _width:auto; _height:auto;}
+.images p{ position:absolute; bottom:10px; left:10%; width:80%; height:34px; overflow:hidden; background:rgba(255,255,255,0.8); *background:#fff; color:#333; line-height:34px; text-align:center; font-size:16px;}
+
+.animal .left{ width:480px; height:490px;}
+.animal .right{ width:520px; height:490px;}
+
+.hgroup{ width:100%;}
+.hgroup h3{ width:100%; height:40px; line-height:40px; background:#F0F1F0; text-indent:10px; _text-align:center; _overflow:hidden; color:#333; font-size:22px; font-weight:500;}
+.hgroup h3 a{ font-size:14px; float:right; font-style:normal; color:#666;}
+.hgroup ul{ width:100%; overflow:hidden; background:#fff; margin-top:10px;}
+.hgroup ul li{ height:30px; padding:0px 10px 0px 0px; background:url(http://s.lelezone.com/baike/images/ico-4.png) no-repeat 4px center; line-height:30px; text-indent:16px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; list-style:disc;}
+.hgroup ul li a{ color:#666;}
+.hgroup .himg{ width:100%; margin-top:10px; display:block;}
+.hgroup .himg img{ width:100%; height:180px;}
+.hgroup .himg p{ height:34px; line-height:34px; color:#242424; text-align:center;}
+
+.life .ie6s{ width:300px; margin-right:50px;}
+.life .ie6s.t{ margin-right:0px;}
+.social .ie6s{ position:relative; height:512px;}
+
+.mall{ height:330px; padding:10px; overflow:hidden; position:relative;}
+.introduce{ width:100%;}
+.introduce .describe{ position:relative; height:40px; overflow:hidden; line-height:20px;}
+.introduce .describe em{font-style:normal; width:26px; height:14px; border:solid 1px #FFAD38; color:#FFAD38; background:#FFFAF2; font-size:12px; text-align:center; line-height:12px;}
+.introduce .describe a{ color:#333; font-size:12px; margin:0 5px; word-break: break-all;}
+.introduce .describe a:hover{ text-decoration:underline;}
+.introduce .describe div{ position:relative; display:inline-block; padding-left:20px; padding-right:5px; background:url(http://s.lelezone.com/baike/images/ico-5.png) no-repeat 0px -65px; color:#E60012; font-size:12px;}
+.introduce .price{ width:100%; height:30px; line-height:30px; position:relative;}
+.introduce .price .left{ float:left; color:#E70B1D; font-weight:bold; font-family:"MS Serif", "New York", serif; font-size:16px; position:initial; background:none;}
+.introduce .price .right{ float:right; width:100px; position:initial; background:none;}
+.introduce .price .right a , .introduce .price .right p{ height:30px; line-height:26px; text-align:right; float:left; background:url(http://s.lelezone.com/baike/images/ico-5.png) no-repeat;}
+.introduce .price .right a{ width:34px; background-position:0px 9px; color:#666;}
+.introduce .price .right p{ width:46px; background-position:0px -27px; color:#EB6363; margin-left:10px;}
+
+.brand{ height:100px; padding:20px 0; background:#000; position:relative;}
+
+.comList .dog,.cat{ width:368px; }
+.comList .hot{ width:264px;}
+.comList .dog .ie6 , .cat .ie6 , .hot .ie6{ float:left; width:82px; height:110px; margin-right:10px;}
+.comList .hot .ie6{margin-right:6px;}
+.comList .dog .frist , .cat .frist ,.hot .frist{  background:url(http://s.lelezone.com/baike/images/sprites-header.png) no-repeat;text-align:center;}
+.comList .dog .frist a , .cat .frist a ,.hot .frist a{ color:#333; font-size:22px; line-height:170px;}
+.comList .dog .frist{ background-position:16px -88px; }
+.comList .cat .frist{ background-position:-62px -88px;}
+.comList .hot .frist{ background-position:-142px -88px;}
+.comList .dog .sub .ie6s{ height:55px;}
+.comList dt{ text-align:center;}
+.comList dt a{ color:#333; font-size:14px; font-weight:bold; line-height:32px;}
+.comList dd a{ color:#666; font-size:12px;}
+
+.lunbo{ width:100%; height:314px;}
+.lunbo .ie6s{ position:relative; height:240px; overflow:hidden;}
+.lunbo .ie6s div{ position:absolute; left:0px; top:0px; width:2000px; height:240px;}
+.lunbo .ie6s div a{ float:left;}
+.lunbo img{ width:360px; height:240px;}
+.lunbo .lunboH{ height:44px; line-height:44px; background:#000; text-align:center; position:relative;}
+.lunbo .lunboH div{ position:absolute; height:44px; width:2000px; top:0px; left:0px;}
+.lunbo .lunboH div a{ width:360px; height:44px; float:left;}
+.lunbo a{ color:#fff;}
+.lunbo ol{ height:30px; line-height:30px; text-align:center;}
+.lunbo li{ width:14px; height:14px; cursor:pointer; display:inline-block; border-radius:50%; background:#8E8E8E; *float:left; *margin-right:10px; *margin-top:7px;}
+.lunbo li.active{ background:#D58A0D;}
+.qiehuan{ height:291px; border:solid 1px #F2F2F2;}
+.qiehuan h3{ height:60px; line-height:60px; font-weight:500; text-indent:18px;}
+.qiehuan h3 a{ color:#333; font-size:22px;}
+.qiehuan .ie6s{ position:relative;}
+.qiehuan .ie6s .iea1{ font-size:50px; display:none; height:50px; width:20px; color:#ddd; line-height:40px; text-align:center; position:absolute; top:115px;}
+.qiehuan .ie6s .iea1:hover{ color:#333;}
+.qiehuan .ie6s .iea1.left{ left:0px;}
+.qiehuan .ie6s .iea1.right{ right:0px;}
+.qiehuan .ie6s .ie6a{ width:358px; height:218px; overflow:hidden; position:relative;}
+.qiehuan .ie6s .ie6a ul{ width:2000px; position:absolute; top:0px; left:0px; height:218px;}
+.qiehuan .ie6s .ie6a ul li{ float:left;}
+.qiehuan .ie6s .ie6a ul li div .ie6ya{ width:100%; height:110px; display:block; }
+.qiehuan .ie6s .ie6a ul li div{ width:108px; margin:0px 5px; float:left;}
+.qiehuan .ie6s .ie6a ul li div .ie6ya img{ max-width:100px; max-height:140px; _width:100px; _height:100px; margin:10px auto 0px;}
+.qiehuan .ie6s .ie6a ul li div .p1{ text-align:center; color:#E60416; font-size:16px; font-weight:bold; height:40px; line-height:40px;}
+.qiehuan .ie6s .ie6a ul li div .p2{ padding:0px 5px; word-break:break-all; height:58px; overflow:hidden; }
+.qiehuan .ie6s .ie6a ul li div .p2 a{ color:#666; font-size:12px; line-height:16px;}
+.qiehuan .ie6s .ie6a ul li div .p2 a:hover{ text-decoration:underline;}
+.qiehuan .ie6s .ie6a ul li div .p2 strong{ color:#E60416;}
+
+.dynamic{ width:100%;}
+.dynamic dt{ height:46px; line-height:46px; text-align:center; font-weight:bold; font-size:18px; overflow:hidden;}
+.dynamic dt a{ color:#6C8B36;font-size:16px}
+.dynamic dd .text{ color:#7A7A7A; height:42px; font-size:14px; line-height:20px; position:relative; overflow:hidden;}
+.dynamic dd .text a{ color:#6C8B36; position:absolute; right:0px; bottom:0px;}
+
+.newsList{ width:100%;}
+.newsList li{ height:30px; _width:100%; width:100%; line-height:30px; text-overflow: ellipsis; white-space: nowrap;  overflow: hidden;}
+.newsList li a:hover{ border-bottom:solid 1px #f60; color:#f60;}
+.newsList li .left{ color:#8F8F8F; margin-right:4px;}
+.newsList li .left.active{ color:#f60; font-weight:bold;}
+.newsList li .right{ color:#666;}
+
+.tab{ width:100%;}
+.tab .tabList{ height:40px; line-height:40px; text-align:center; font-size:16px;}
+.tab .tabList li{ width:25%; height:40px; float:left; position:relative;}
+.tab .tabList li a{  color:#858585; position:absolute; width:100%; height:40px; top:0px; left:0px;}
+.tab .tabList li.active a{ border-top:solid 2px #FD9229; border-right:solid 1px #ddd; border-left:solid 1px #ddd; background:#fff; height:41px; top:-1px; font-weight:bold; color:#FD9229;}
+.tab .tabList li:nth-of-type(1).active a{ border-left:0px;}
+.tab .tabList li:nth-of-type(4).active a{ border-right:0px; margin-left:-1px;}
+.tab .tabDetaicls{ border-top:solid 2px #E1E1E1; padding-bottom:12px;}
+.tab .tabDetaicls .luntan{ padding:0px 10px; display:none;}
+.tab .tabDetaicls .luntan dl{ padding:11px 0; border-bottom:dashed 1px #CECCCE;}
+.tab .tabDetaicls .luntan dl:last-of-type{ border-bottom:0px;}
+.tab .tabDetaicls .luntan dl dt{ float:left; margin-right:10px;}
+.tab .tabDetaicls .luntan dl dd{ float:left; width:80%; _width:75%; _height:40px; _overflow:hidden;}
+.tab .tabDetaicls .luntan dl dt img{ width:46px; height:46px; border-radius:50%;}
+.tab .tabDetaicls .luntan dl dd h4{ height:24px; line-height:24px;  _text-align:left; overflow:hidden;}
+.tab .tabDetaicls .luntan dl dd h4 a{ color:#333;}
+.tab .tabDetaicls .luntan dl dd p{ font-size:12px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.tab .tabDetaicls .luntan dl dd p a{ color:#666;}
+
+.footer{ width:1000px; height:100px; background:#fff; margin:10px auto 0px;}
+
+.column{ width:100%; height:auto;}
+.column dl{}
+.column dl dt{ font-size:16px; height:48px; line-height:48px; color:#444; border:1px solid #ddd; text-align:center; _text-align:center;}
+.column dl dt h2 { font-weight:normal; font-size:16px; height:48px; line-height:48px; color:#444; }
+.column dl dd { height:49px; line-height:49px; border-bottom:1px solid #e9e9e9; background:#fafafa;  overflow:hidden; _text-align:left;}
+.column dl dd.active{ height:150px; padding-bottom:10px;}
+.column dl dd .top{ line-height:49px; font-size:14px; text-indent:50px; position:relative;}
+.column dl dd .top em{ width:20px; height:20px;  background:#999; text-align:center; line-height:20px; color:#fff; font-size:12px; position:absolute; top:15px; *top:-1px; left:15px; _left:-30px; text-indent:0px; font-style:normal;}
+.column dl dd:nth-child(4) .top em { background:#f60; }
+.column dl dd:nth-child(2) .top em { background:#f60; }
+.column dl dd:nth-child(3) .top em { background:#f60; }
+.column dl dd a{color:#666; }
+.column dl dd .bottom{ height:90px; padding:10px; background:#F4F4F4;}
+.column dl dd .bottom a{ float:left; width:130px; height:90px;}
+.column dl dd .bottom img{ width:130px; height:90px;}
+.column dl dd .bottom p{ width:150px; margin-left:10px; float:left; height:100%; position:relative; line-height:22px; color:#666; font-size:12px;}
+.column dl dd .bottom p a{ position:absolute; right:0px; bottom:10px; color:#f60; font-size:14px; width:88px; height:12px;}
+/*common Style - end*/
+
+/*content start*/
+.focus{ background:#F4F2F4;}
+.focus .ie6s{ padding:0px 15px;}
+.focus .ie6s h3{ height:44px; position:relative;}
+.focus .ie6s h3 div{ width:138px; height:47px; text-align:center; color:#fff; font-size:12px; background:url(../images/content.png) no-repeat 0px 0pc; position:absolute; left:70px; top:-3px}
+.focus .ie6s h3 div strong{ font-size:20px; display:block;}
+.focus .focusNews{ border-bottom:dashed 1px #DEDDDE; padding-bottom:10px;}
+.focus .focusListn{ padding:5px 0;}
+.comment .ie6s{ border:solid 1px #E6E6E6;}
+
+.title1{ background-position:left 0px}
+.title2{ background-position:left -50px}
+.title3{ background-position:left -100px}
+.title4{ background-position:left -150px}
+.title5{ background-position:left -200px}
+.title6{ background-position:left -250px}
+.title7{ background-position:left -300px}
+.title8{ background-position:left -350px}
+.title9{ background-position:left -400px}
+.title10{ background-position:left -450px}
+.title11{ background-position:left -500px}
+.title12{ background-position:left -559px}
+.title13{ background-position:left -600px}
+.title14{ background-position:left -650px}
+.title15{ background-position:left -700px}
+.photoTitle1{ background-position:left 0px}
+.photoTitle2{ background-position:left -60px}
+.photoTitle3{ background-position:left -120px}
+.photoTitle4{ background-position:left -180px}
+.photoTitle5{ background-position:left -240px}
+.photoTitle6{ background-position:left -300px}
+
+.img .right a{ float:left; width:130px; height:180px; margin-left:22px; color:#666; text-align:center;}
+.img .right a img{ width:130px; height:146px;}
+.img .right a p{ padding:0 10px; overflow:hidden; height:34px; line-height:34px;}
+
+.animal .left .top{ width:100%; height:320px; _overflow:hidden;}
+.animal .left .bottom{ width:100%; height:160px; margin-top:10px;}
+.animal .left .bottom .ie6sb{ width:235px; height:100%; _overflow:hidden; margin-right:10px; float:left;}
+.animal .left .bottom .ie6sb.t{ margin-right:0px;}
+.animal .right .dog .ie6sa{ width:230px; _width:212px; _overflow:hidden; height:146px; margin-bottom:24px; float:left; border-bottom:dashed 1px #B4B0B4; margin-left:30px;}
+
+.life .cheats{ height:430px;}
+.life .hgroup h3{ background:none;}
+.life .hgroup ul{ margin-top:0px;}
+
+.other h3{ font-size:22px; font-weight:500; height:40px; line-height:40px;}
+.other div{ margin-top:6px;}
+.other div dl{ padding-right:10px; height:74px; text-indent:38px; border-bottom:dashed 1px #e2e2e2;}
+.other div dl:last-of-type{ border-bottom:0px;}
+.other div dl dt{ height:40px; line-height:40px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; position:relative;}
+.other div dl dt em{ position:absolute; font-family:"Monotype Corsiva"; font-size:40px; top:0px; left:0px; text-indent:0px;}
+.other div dl dt a{ color:#666; font-size:18px;}
+.other div dl dd{ height:24px; line-height:24px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.other div dl dd a{ color:#999;}
+.other div dl a:hover{ color:#f60; text-decoration:underline;}
+
+.socialList{ position:absolute; _position:static; top:0px; left:0px; width:1008px;}
+.socialList .ie6sa{ float:left; width:326px; _overflow:hidden; margin-right:10px; margin-bottom:10px; background:#EEF1F1;}
+.socialList .ie6sa .socialUl{ height:40px; width:326px; position:relative; border-bottom:dashed 1px #CCCBCE;}
+.socialList .ie6sa .socialUl li{ float:right; height:40px; line-height:40px; font-weight:bold; padding:0 2px;}
+.socialList .ie6sa .socialUl li a{ color: #333;}
+.socialList .ie6sa .socialUl li a:hover{ color:#f60;}
+.socialList .ie6sa .socialUl li.position{ position:absolute; left:10px; top:-1px; color:#f60; font-size:16px;}
+.socialList .ie6sa .newsList li{ text-indent:10px; _text-align:left; width:306px; padding:0 10px; background:urlhttp://s.lelezone.com/baike/images/ico-4.png) no-repeat 10px center;}
+
+.mall .ie6s{ width:980px; height:330px;}
+.mall .ie6s .ie6sa{ position:relative; width:2000px; _width:0px; height:330px; left:0px; top:0px;}
+.mall .ie6s .ie6sa ul { position:absolute; top:0px; left:0px;}
+.mall .ie6s .ie6sa ul li{ width:988px; height:330px; float:left;}
+.mall .ie6s .ie6sa ul li .ie6sc{ padding:0 10px; width:220px; height:100%; float:left; margin-right:7px;}
+.mall .ie6s .ie6sa ul li .ie6sc:hover{ box-shadow:0px 0px 2px #333;}
+.mall .ie6s .ie6sa ul li .ie6sc div{ margin-top:10px;}
+.mall .ie6s .ie6sa ul li .ie6sc img{ height:240px; max-width:220px; margin:0 auto;}
+.mall .left , .mall .right{ width:59px; height:59px; display:block; position:absolute; top:150px; background:url(http://s.lelezone.com/baike/images/ico-5.png) no-repeat;}
+.mall .left{ left:0px; background-position:0px -101px;}
+.mall .right{ right:0px; background-position:0px -180px;}
+
+.brand .ie6s{position:relative; height:100px;}
+.brand .ie6s div{ width:920px; height:100px; margin:0px auto; overflow:hidden; position:relative;}
+.brand .ie6s div ul{ width:2000px; position:absolute; top:0px; left:0px;}
+.brand .ie6s div ul li{ float:left; width:920px;}
+.brand .ie6s div ul li a{ float:left; margin:0 17px; color:#fff; text-align:center; line-height:30px; overflow:hidden;}
+.brand .ie6s div ul li a img{ width:150px; height:70px;}
+.brand .ie6s .left , .brand .ie6s .right{ width:15px; height:27px; display:block; position:absolute; background:url(http://s.lelezone.com/baike/images/ico-6.png) no-repeat; top:40px;}
+.brand .ie6s .left{ background-position:-15px 0px; left:10px;}
+.brand .ie6s .right{ background-position:0px 0px; right:10px;}
+
+.footer .friend .friend { width:100%;height:40px; line-height:40px; font-size:16px; color:#999; border-bottom:dashed 1px #ddd;}
+.footer .friend p{ margin-top:10px;}
+.footer .friend p a{ color:#999; margin-right:10px; font-size:12px; font-weight:normal; line-height:24px;}
+.footer .friend p a:hover{ color:#f60;}
+.footer .copyright{ border-top:dashed 1px #ddd; text-align:center; line-height:30px; color:#999;}
+.footer .copyright p.s{ color:#666;}
+/*content end*/
+
+/*consultation start*/
+.comList .consultation{ width:250px; height:110px; float:left;}
+.comList .consultation dt{ float:left; width:90px; height:110px; background:url(http://s.lelezone.com/baike/images/consultation.png) no-repeat;}
+.comList .consultation dt a { width:100%; height:100%; display:block; line-height:160px; font-size:16px; font-weight:bold; color:#4F4F4F; text-align:center;}
+.comList .consultation dt.bg1{ background-position:24px 27px;}
+.comList .consultation dt.bg2{ background-position:32px -86px;}
+.comList .consultation dt.bg3{ background-position:24px -204px;}
+.comList .consultation dt.bg4{ background-position:24px -334px;}
+.comList .consultation dd{ width:160px; height:110px; float:left;}
+.comList .consultation dd a{ float:left; width:53px; height:55px; line-height:55px; font-size:14px; color:#333;}
+
+.focus .consultationNews .newsList li{ height:27px; line-height:27px;}
+.focus .consultationNews:last-of-type{ border-bottom:0px;}
+
+.tab .tabDetaicls .common{ width:100%; height:280px; display:none; position:relative; overflow:hidden; text-align:center;}
+.tab .tabDetaicls .common .ie6s{ width:336px; height:280px; position:absolute; left:0px; top:0px;}
+.tab .tabDetaicls .common .ie6s .box{ width:140px; _width:138px; height:130px; _overflow:hidden; float:left; margin-right:28px; margin-top:10px; padding:0px;}
+.tab .tabDetaicls .common .ie6s .box img{ width:138px; height:94px;}
+.tab .tabDetaicls .common .ie6s .box a{ line-height:46px; color:#333; text-align:center; font-size:14px;}
+.consultationTop .lunbo ol{ height:50px; line-height:50px;}
+.consualImg{ margin-top:10px;}
+
+.dog{ width:100%;}
+.dog .left{ width:480px; height:530px;}
+.dog .left .top{ height:100%;}
+.dog .left .bottom{ height:200px; margin-top:10px;}
+.dog .left .bottom>div img{ width:100%; height:100%;}
+.dog .left .bottom>div .a{ height:30px; line-height:30px; color:#333; text-align:center; display:block;}
+.dog .left .bottom>div .a:hover{ color:#f60;}
+.dog .left .bottom>div.t{ margin-right:0px;}
+.dog .right{ width:490px; margin-left:20px; height:520px; background:#F2F2F2; padding:5px;}
+.dog .right .ie6sd{ padding:5px; background:#fff; }
+.dog .right .ie6sd .ie6se{ border:solid 1px #ddd; padding-top:20px;}
+.dog .right .ie6sd .ie6se div{ width:230px; _width:216px; height:160px; float:left; margin-left:6px;}
+.hotAnimal .right , .Auar .right{ margin-left:0px; margin-right:20px; height:352px;}
+.hotAnimal .left , .Auar .left{height:360px;}
+.hotAnimal .alone , .Auar .alone{ height:30px; line-height:40px; font-size:18px; color:#333; text-align:center; display:block;}
+.hotAnimal .alone:hover , .Auar .alone:hover{ color:#f60;}
+
+.birds{ height:500px; border:solid 1px #F9F9F9; background:#FDFEFF;}
+.birdsT{ height:330px;}
+.birds .ie6s{ width:440px; height:150px; margin:0px 29px; margin-bottom:24px; float:left;}
+.birds .ie6s .left{ width:180px; height:120px; float:left;}
+.birds .ie6s .left p{ text-align:center; height:30px; width:100%; overflow:hidden; line-height:30px;}
+.birds .ie6s .left p a{ color:#333;}
+.birds .ie6s .left P a:hover{ color:#f60;}
+.birds .ie6s .right{ width:240px; height:120px; float:right;}
+.birds .hgroup ul li{ height:24px; line-height:24px;}
+/*consultation ed*/
+
+/*category start*/
+.current{ width:1000px; margin:0 auto; height:50px; line-height:50px; color:#666; font-size:12px;}
+.current a{ color:#666; font-size:12px; font-weight:normal; display:inline;}
+.current a h1{ color:#666; font-size:12px; font-weight:normal; display:inline;}
+.current a h2{ color:#666; font-size:12px; font-weight:normal; display:inline;}
+.current a:hover{ color:#f60;}
+
+.border{ height:26px; border-bottom: solid 1px #E5E5E5; }
+.height{ height:20px;}
+.category{ width:1000px; margin:0 auto;}
+.category .left{ width: 644px; height:auto; border:solid 1px #E5E5E5; position:relative; _overflow:hidden;}
+.category .right{ width:354px; height:auto; position:relative; _overflow:hidden;}
+
+.cateNav{width:1000px; margin:0 auto;line-height:26px; width:1000px; color:#333;}
+.cateNav li{ width:80px; height:26px; margin-bottom:5px; overflow:hidden; line-height:26px; float:left; position:relative; margin-right:3px; background:#F6F6F6; text-align:center; cursor:pointer;}
+.cateNav li a{ color:#333; display:block; width:100%; height:100%;}
+.cateNav li a h2 { font-weight:normal; color:#333; line-height:26px; font-size:14px; }
+.cateNav li em{ display:none; position:absolute; top:100%; left:50%; margin-left:-8px; width:15px; height:7px; background:url(http://s.lelezone.com/baike/images/ico-7.png) no-repeat;}
+.cateNav li.active{ background:#FFB974; color:#fff;}
+.cateNav li.active a{ color:#fff;}
+.cateNav li.active em{ display:block;}
+
+.cateList{ padding:10px;}
+.cateList h2{ text-align:center;}
+.datas{ width:100%; height:120px; margin-bottom:10px;}
+.datas .left{ width:180px; height:120px;}
+.datas .left img{ width:180px; height:120px;}
+.datas .right{ width:402px; height:120px; padding:0px 20px;}
+.datas .right h3{ height:36px; line-height:36px; font-size:18px; overflow:hidden;}
+.datas .right h3 a{ color:#333;}
+.datas .right p{ color:#666; font-size:13px; height:72px; line-height:24px; position:relative;}
+.datas .right p a{ color:#f60; position:absolute; font-size:14px; right:0px; bottom:0px;}
+
+.ma{ width:310px; margin:0 auto;}
+.ma .t{ margin-top:20px;}
+.ma>div{ margin-bottom:30px;}
+/*category end*/
+
+/*article start*/
+.article h1{ font-size:22px; color:#333; margin-top:10px; margin-bottom:10px; text-align:center; }
+.article .text{ text-align:center; font-size:12px; color:#999; border-bottom:solid 1px #ddd; padding:20px 0px;}
+.article .ar{ padding:30px 0px;}
+.article .ar p , .article .ar , .article .ar div { color:#666; line-height:26px;}
+.article .ar strong{ color:#666; line-height:26px;}
+.article .ar p , .article .ar , .article .ar div{ margin-bottom:5px;margin-top:5px;}
+.article .ar img{ margin:5px auto; }
+/*srticle end*/
+
+/*baike start*/
+.baike{ width:1000px; margin:20px auto; position:relative;}
+.baike .common{ width:790px; float:right;}
+.baike .common .animal{ margin-bottom:30px;  border:solid 1px #eee;}
+.baike .common .animal h2{ height:50px; line-height:50px; background:#F9F0E6; text-indent:10px; _text-align:left; font-size:20px; color:#000;}
+.baike .common .animal dl{ padding:10px;}
+.baike .common .animal dl dt{ height:40px; line-height:40px;  border-bottom:solid 1px #eee; position:relative;}
+.baike .common .animal dl dt a{ position:absolute; right:0px; top:0px; font-size:14px; color:#666; font-weight:normal;}
+.baike .common .animal dl dt div a{ position:relative; color:#f60; font-size:16px; font-weight:bold;}
+.baike .common .animal dl dt a:hover{ color:#f60;}
+.baike .common .animal dl dd{ height:auto; padding:10px 0;}
+.baike .common .animal dl dd a{ float:left; width:160px; padding-right:30px; overflow:hidden; height:34px; line-height:34px; color:#666;}
+.baike .common .animal dl dd a:hover{ color:#f60;}
+
+.fix{ position:fixed; width:200px;}
+.fix ul li{ width:100%; height:44px; line-height:44px; color:#fff; margin-bottom:2px; text-indent:60px; cursor:pointer; background-color:#FFB974; font-size:16px; font-weight:bold; background-image:url(../images/ico-9.png); background-repeat:no-repeat;}
+.fix ul li.active{ background-color:#FB8818;}
+.fix ul li.bg1{ background-position:30px 13px;}
+.fix ul li.bg2{ background-position:30px -40px;}
+.fix ul li.bg3{ background-position:30px -91px;}
+.fix ul li.bg4{ background-position:30px -135px;}
+.fix ul li.bg5{ background-position:30px -190px;}
+.fix ul li.bg6{ background-position:30px -236px;}
+
+.article .tag{ padding:20px 0px;}
+.article .tag dt , .article .tag dd{ float:left;}
+.article .tag dt{ width:70px;}
+.article .tag dd{ width:550px;}
+.article .tag a.t{ color:#000; font-weight:bold; padding:2px 10px; border:none;}
+.article .tag a{ padding:3px 30px; border:solid 1px #f60; color:#333; border-radius:20px; margin-left:10px; white-space:nowrap; margin-bottom:10px; float:left;}
+
+.img .afterC{ height:328px;}
+.img .afterT{ text-align:center; height:30px; line-height:30px;}
+.img .afterT a{ color:#666;}
+/*baike end*/
+
+/*图片 pc*/
+.photoNav{ width:1000px; margin:0 auto; padding:25px 0px; background:#f8f8f8; }
+.photoNav .photoCateNav{ width:100%; border-right:0px;}
+.photoNav .photoCateNav dd{ width:944px;}
+.photoNav dl{ float:left; width:165px; height:50px; _overflow:hidden; border-right:dashed 1px #ddd;}
+.photoNav dl.t{ border-right:0px;}
+.photoNav dl dt , .photoNav dl dd{ float:left;}
+.photoNav dl dt a , .photoNav dl dd a{ color:#333;}
+.photoNav dl dt{ width:56px; height:100%; _overflow:hidden; text-align:center; line-height:80px; font-size:16px; background:url(../images/ico-10.png) no-repeat;}
+.photoNav dl dt.bg1{ background-position:15px 0px;}
+.photoNav dl dt.bg2{ background-position:22px -80px;}
+.photoNav dl dt.bg3{ background-position:21px -166px;}
+.photoNav dl dt.bg4{ background-position:18px -257px;}
+.photoNav dl dt.bg5{ background-position:13px -348px;}
+.photoNav dl dt.bg6{ background-position:13px -432px;}
+.photoNav dl dt a{ display:block; width:100%; height:100%;}
+.photoNav dl dd{ width:109px; _width:108px; _overflow:hidden; font-size:12px; line-height:26px;}
+.photoNav dl dd a{ display:block; width:50px; height:26px; float:left; margin-left:3px; overflow:hidden;}
+
+.photoTop{ width:1000px; height:480px; overflow:hidden; margin:0px auto; padding-top:8px; border-top:solid 2px #333; }
+.photoTop .left{ width:280px;}
+.photoTop .right{ width:720px; height:100%;}
+.photoTop .right a{ display:none;}
+.photoTop .right img{ width:100%; height:100%;}
+.photoTop .other>div dl{ height:41px; border-bottom:dashed 1px #ddd;}
+.photoTop .other>div dl dt em{ font-size:36px;}
+.photoTop .other>div dl dt a{ font-size:16px;}
+.photoTop .other>div dl dt{ height:36px;}
+
+.animalPhoto a{ float:left; margin-right:13px;}
+.animalPhoto a.t{ margin-right:0px;}
+.animalPhoto img{ width:240px; height:360px;}
+.animalPhoto p{ width:220px; height:40px; text-align:center; line-height:40px; color:#333; font-size:18px; overflow:hidden; padding:0px 10px;}
+.afterAnimalPhoto p{ margin-bottom:20px;}
+
+.photoBox{ width:1050px;}
+.content .dqwz{ height:40px; line-height:40px;}
+.content .dqwz a{ color:#333;}
+.content .dqwz a:hover{ color:#f60; text-decoration:underline;}
+
+.petIg{ border:solid 1px #ddd; padding:10px;}
+.petIg .text{ width:100%; height:130px; text-align:center; line-height:110px; position:relative;}
+.petIg .text h1{ line-height:50px;}
+.petIg .text p{ position:absolute; top:0px; left:10px; font-size:30px; }
+.petIg .text span{ font-size:20px; line-height:20px;}
+.petIg .text span strong{ font-size:50px;}
+.petIg .petImg{ margin:0 auto; max-width:98%;}
+.petIg .petBan{ margin:0px 10px; height:100px; padding:15px 0px; position:relative;}
+.petIg .petBan .pageTop , .petIg .petBan .pageBottom{ position:absolute; width:108px; height:108px; text-align:center; line-height:108px; top:15px; background:url(../images/pic_bg.png) no-repeat; }
+.petIg .petBan .pageBottom{ right:-10px;}
+.petIg .petBan .pageTop{ left:-10px;}
+.petIg .petBan .pageTop img , .petIg .petBan .pageBottom img{ width:100px; height:100px;}
+.petIg .petBan .pageCenter{ width:750px; height:100px; margin:0px auto; position:relative;}
+.petIg .petBan .pageCenter .left , .petIg .petBan .pageCenter .right{ width:42px; height:100px; background:#999; position:absolute; top:0px; text-align:center; line-height:100px; font-size:24px; color:#fff;}
+.petIg .petBan .pageCenter .left{ left:0px;}
+.petIg .petBan .pageCenter .right{ right:0px;}
+.petIg .petBan .pageCenter>a:hover{ background:#333; color:#f60;}
+.petIg .petBan .pageCenter .center{ width:620px; height:100px; margin:0px auto; position:relative; overflow:hidden;}
+.petIg .petBan .pageCenter .center ul{ position:absolute; left:0px; top:0px; width:1000px; height:100px;}
+.petIg .petBan .pageCenter .center ul li{ width:100px; height:100px; margin-right:29px; float:left; position:relative;}
+.petIg .petBan .pageCenter .center ul li a{ display:block; width:100%; height:100%; position:relative;}
+.petIg .petBan .pageCenter .center ul li a span{ width:20px; height:20px; background:rgba(0,0,0,0.6); text-align:center; line-height:20px; display:block; color:#fff; position:absolute; right:0px; bottom:0px;}
+.petIg .petBan .pageCenter .center ul li a img{ width:100%; height:100%;}
+.petIg .petBan .pageCenter .center ul li div{ width:100%; position:absolute;top:0px; left:0px; height:100%; background:#fff; opacity:0.6;}
+.petIg .petBan .pageCenter .center ul li div.active{ display:none;}
+
+.bianj{ margin-top:20px;}
+.bianj>p{ height:30px; line-height:30px; font-size:22px; color:#000; text-indent:10px; font-weight:blod; border-bottom:solid 2px #333;}
+.bianj .oetBimg{ width:1100px; padding:13px 0px;}
+.bianj .oetBimg a{ display:block; float:left; width:240px; height:390px; margin-right:13px;}
+.bianj .oetBimg a img{ width:240px; height:360px;}
+.bianj .oetBimg a p{ height:30px; line-height:30px; color:#333; padding:0px 20px; overflow:hidden;}
+.petImgParent{ position:relative;}
+.petImgParent .left , .petImgParent .right{ width:50%; height:100%; position:absolute; top:0px;}
+.petImgParent .left a , .petImgParent .right a{ display:block; width:100%; height:100%;}
+.petImgParent .left{ left:0px;}
+.petImgParent .right{ right:0px;}
+.petImgParent .cursorLeft{  cursor:url(../images/prev.cur) , auto;}
+.petImgParent .cursorRight{ cursor:url(../images/next.cur) , auto;}
+#afterImg{ position:relative;}
+
+/*图片 pc*/
+
+/*404*/
+.this404{ width:724px; height:663px; position:relative; background:url(../images/404.jpg) no-repeat center center; padding:100px 0px; margin:0 auto;}
+#search1{ width:276px; height:32px; position:absolute; top:376px; _top:280px; right:117px;}
+#search1 .text{ width:239px; height:30px; line-height:30px; border:solid 1px #ddd; border-right:0px; color:#999; text-indent:4px;}
+#search1 .btn{ width:36px; height:32px; position:absolute; top:0px; right:0px; background:#f60 url(http://s.lelezone.com/baike/images/sprites-header.png) no-repeat -208px 6px; cursor:pointer; color:#fff;}
+
+.content ul.articleAfter{ width:230px; background:#fff; margin-top:10px; border:solid 1px #ddd; border-bottom:0px;}
+.content ul.articleAfter li{ width:100%; height:52px; line-height:52px; text-indent:24px; border-bottom:solid 1px #ddd;}
+.content ul.articleAfter li a{ color:#333; font-size:18px;}
+.content ul.articleAfter li.active a{ color:#f60; font-weight:bold;}
+.content div.articleDiv{ width:758px; background:#fff; margin-top:10px; min-height:500px; border:solid 1px #ddd;}
+.content div.articleDiv h3{ height:60px; line-height:60px; _text-align:left; font-size:20px; font-weight:bold; text-indent:24px; border-bottom:solid 2px #f60;}
+.content div.articleDiv div{ padding:20px; background:#fff;}
+.content div.articleDiv div .t{ font-size:18px; color:#f60; font-weight:bold;}
+.content div.articleDiv div p{line-height:30px; color:#333; font-size:16px; margin-bottom:10px; text-indent:24px;}
+
+.content div.articleDiv div p.t{ font-size:16px; font-weight:bold; color:#f60;}
+
+.about{ height:40px; line-height:40px; font-size:16px; margin-top:20px; text-align:center;}
+.about a{ margin-right:6px; color:#333;}
+.qr-code-box{
+  width: 100px;
+  height: 100px;
+  margin:0 auto;
+  margin-bottom:40px;
+}
+.qr-code-box img{
+  width: 100%;
+}
+.qr-code-box span{
+  margin:2px -30px;
+  display: block;
+  font-size: 10px;
+  text-align: center;
+}
+.img-box img{
+  width: 100%;
+}
+.table-box table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.table-box td{
+  border: solid 1px #000;
+  text-align: center;
+  font-size: 14px;
+  line-height: 2;
+}
+
+
+/*添加标签，2016年9月2日10:48:37*/
+
+.ultab {width:100%; display:block;}
+.ultab li { width:106px; padding:3px 5px; float:left; text-align:center; background:#f6f6f6; margin:5px 0; margin-right:11px; }
+.ultab li:nth-child(5n) { margin-right:0; }
+.ultab li.active { background:#FFB974; }
+.ultab li a { display:block; color:#333; font-size:14px; }
+.ultab li.active a { color:#fff; } 
+
+
+/*乐乐宠物页面加长内容*/
+
+.category .add-cont { width:980px; height:auto; margin-top:19px; }
+.category .add-cont .add-title { width:100%; height:49px; border-bottom:1px solid #ddd; background:#f6f6f6; }
+.category .add-cont .add-title h2 { display:inline-block; width:400px; height:49px; line-height:49px; margin-left:20px; font-size:16px; font-family:"Microsoft YaHei"; }
+.category .add-cont .add-title h2 a { color:#666; }
+.category .add-cont .add-title p { display:inline-block; float:right; height:49px; line-height:49px; margin-right:15px; font-size:14px; font-family:"Microsoft YaHei"; }
+.category .add-cont .add-title p a { color:#666; }
+.category .add-cont .add-title p a span { color:#ddd; }
+.category .add-cont .add-list ul { margin-left:1px; }
+.category .add-cont .add-list ul li { float:left; width:230px; height:191px; margin-right:19px; margin-top:10px; }
+.category .add-cont .add-list ul li:nth-child(4n) { margin-right:0; }
+.category .add-cont .add-list ul li.t { margin-right:0; }
+.category .add-cont .add-list ul li p { width:228px; height:40px; line-height:40px; text-align:center; font-size:14px; color:#444; font-family:"Microsoft YaHei"; border:1px solid #ddd; border-top:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.category .add-border { width:978px; height:auto; border:1px solid #ddd; }
+.category .add-cont .add-list1 { margin:10px 0; }
+.category .add-cont .add-list1 ul { width:300px; margin:0 13px; }
+.category .add-cont .add-list1 ul li { width:100%; height:39px; line-height:39px; border-bottom:1px dashed #ddd; }
+.category .add-cont .add-list1 ul li:last-child { border-bottom:0; }
+.category .add-cont .add-list1 ul li img { display:inline-block; line-height:40px; vertical-align:top; margin:19px 12px 0 5px; }
+.category .add-cont .add-list1 ul li a { font-size:14px; color:#444; }
+.category .add-cont .add-list1 ul li a:hover { color:#f5692c; }
+.category .add-cont .add-list1 ul li a span.l { display:inline-block; width:230px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.category .add-cont .add-list1 ul li a span.r { font-size:12px; float:right; color:#999; }
+.category .add-cont .add-list2 { width:100%; height:auto; }
+.category .add-cont .add-list2 .add-left { width:630px; height:auto; }
+.category .add-cont .add-list2 .add-left ul li { float:left; width:200px; height:170px; margin-right:10px; margin-top:10px; }
+.category .add-cont .add-list2 .add-left ul li a p { width:198px; height:39px; line-height:39px; text-align:center; font-size:14px; color:#444; font-family:"Microsoft YaHei"; border:1px solid #ddd; border-top:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.category .add-cont .add-list2 .add-right { width:340px; height:auto; margin-left:10px; }
+.category .add-cont .add-list2 .add-right ul { margin-top:10px; }
+.category .add-cont .add-list2 .add-right ul li { width:100%; height:49px; line-height:49px; border-bottom:1px solid #e9e9e9; background:#fafafa; }
+.category .add-cont .add-list2 .add-right ul li img { display:inline-block; vertical-align:top; margin:24px 10px 0 17px; }
+.category .add-cont .add-list2 .add-right ul li a { font-size:14px; color:#444; }
+.category .add-cont .add-list2 .add-right ul li a span.l { display:inline-block; width:240px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.category .add-cont .add-list2 .add-right ul li a span.r { font-size:12px; float:right; color:#999; margin-right:20px; }
+
+ul.ul-list { margin:15px 0; width:310px; height:auto; }
+ul.ul-list li { float:left; width:101px; height:40px; line-height:40px; text-align:center; border:1px solid #fff; background:#f6f6f6; }
+ul.ul-list li a { display:block; font-size:14px; color:#626262; }
+ul.ul-list li a img { display:inline-block; vertical-align:middle; margin-right:10px; }
+ul.ul-list li a:hover { background:#e2c19c; }
+
+/*乐乐宠物最终页加长 2017年1月2日11:42:53*/
+.mb20 { margin-bottom:20px; }
+.pet-add { margin-top:11px; font-family:"Microsoft YaHei"; }
+.pet-add .pet-cont .pet-title { width:100%; height:49px; border-bottom:1px solid #ddd; background:#f6f6f6; }
+.pet-add .pet-cont .pet-title h2 { font-weight:normal; line-height:49px; font-size:16px; color:#666; margin-left:20px; }
+.pet-add .pic-list { margin-top:10px; }
+.pet-add .pic-list li { float:left; width:180px; height:305px; margin-bottom:15px; margin-right:25px; }
+.pet-add .pic-list li.t { margin-right:0; }
+.pet-add .pic-list li p { width:158px; padding:0 10px; height:34px; line-height:34px; font-size:14px; text-align:center; color:#444; border:1px solid #eee; border-top:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.pet-add .pet-left { width:630px; float:left; }
+.pet-add .pet-left ul li { float:left; width:200px; height:175px; margin-top:10px; margin-right:10px; }
+.pet-add .pet-left ul li p { width:178px; padding:0 10px; height:44px; line-height:44px; font-size:14px; text-align:center; color:#444; border:1px solid #eee; border-top:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.pet-add .pet-right { width:370px; float:left; }
+.pet-add .pet-right ul { width:368px; margin-top:10px; border:1px solid #e9e9e9; border-bottom:0; background:#fafafa; }
+.pet-add .pet-right ul li { width:100%; height:39px; line-height:39px; border-bottom:1px solid #e9e9e9; }
+.pet-add .pet-right ul li img { display:inline-block; vertical-align:top; margin:17px 20px 0 16px; }
+.pet-add .pet-right ul li a { display:inline-block; width:280px; height:39px; line-height:39px; font-size:14px; color:#444; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.pet-add .pet-right ul li a:hover { color:#f5692c; }
+.pet-add .pet-add-list { width:998px; margin:10px 0; padding:10px 0; border:1px solid #e9e9e9; }
+.pet-add .pet-add-list ul { width:290px; margin:0 21px; float:left; }
+.pet-add .pet-add-list ul li { width:100%; height:39px; line-height:39px; border-bottom:1px dashed #ddd; }
+.pet-add .pet-add-list ul li:last-child { border-bottom:0; }
+.pet-add .pet-add-list ul li img { display:inline-block; line-height:40px; vertical-align:top; margin:19px 12px 0 5px; }
+.pet-add .pet-add-list ul li a { height:39px; line-height:39px; font-size:14px; color:#444; }
+.pet-add .pet-add-list ul li a:hover { color:#f5692c; }
+.pet-add .pet-add-list ul li a span.l { display:inline-block; width:230px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.pet-add .pet-add-list ul li a span.r { font-size:12px; float:right; color:#999; }
+
+

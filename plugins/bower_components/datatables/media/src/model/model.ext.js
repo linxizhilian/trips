@@ -228,7 +228,7 @@ DataTable.models.ext = {
 
 
 	/**
-	 * Index for what 'this' index API functions should use
+	 * Home for what 'this' index API functions should use
 	 *  @type int
 	 *  @default 0
 	 */

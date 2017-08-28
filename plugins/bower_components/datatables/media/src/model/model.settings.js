@@ -331,9 +331,9 @@ DataTable.models.oSettings = {
 	 * Sorting that is applied to the table. Note that the inner arrays are
 	 * used in the following manner:
 	 * <ul>
-	 *   <li>Index 0 - column number</li>
-	 *   <li>Index 1 - current sorting direction</li>
-	 *   <li>Index 2 - index of asSorting for this column</li>
+	 *   <li>Home 0 - column number</li>
+	 *   <li>Home 1 - current sorting direction</li>
+	 *   <li>Home 2 - index of asSorting for this column</li>
 	 * </ul>
 	 * Note that this parameter will be set by the initialisation routine. To
 	 * set a default use {@link DataTable.defaults}.

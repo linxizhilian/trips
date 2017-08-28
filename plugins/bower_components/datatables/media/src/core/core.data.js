@@ -584,7 +584,7 @@ function _fnClearTable( oSettings )
  /**
  * Take an array of integers (index array) and remove a target integer (value - not 
  * the key!)
- *  @param {array} a Index array to target
+ *  @param {array} a Home array to target
  *  @param {int} iTarget value to find
  *  @memberof DataTable#oApi
  */

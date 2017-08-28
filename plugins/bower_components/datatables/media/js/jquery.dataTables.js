@@ -1036,7 +1036,7 @@
 		 /**
 		 * Take an array of integers (index array) and remove a target integer (value - not 
 		 * the key!)
-		 *  @param {array} a Index array to target
+		 *  @param {array} a Home array to target
 		 *  @param {int} iTarget value to find
 		 *  @memberof DataTable#oApi
 		 */
@@ -7156,7 +7156,7 @@
 	
 	
 		/**
-		 * Index for what 'this' index API functions should use
+		 * Home for what 'this' index API functions should use
 		 *  @type int
 		 *  @default 0
 		 */
@@ -8494,11 +8494,11 @@
 		 *  @type function
 		 *  @param {node} nFoot "TR" element for the footer
 		 *  @param {array} aData Full table data (as derived from the original HTML)
-		 *  @param {int} iStart Index for the current display starting point in the 
+		 *  @param {int} iStart Home for the current display starting point in the
 		 *    display array
-		 *  @param {int} iEnd Index for the current display ending point in the 
+		 *  @param {int} iEnd Home for the current display ending point in the
 		 *    display array
-		 *  @param {array int} aiDisplay Index array to translate the visual position
+		 *  @param {array int} aiDisplay Home array to translate the visual position
 		 *    to the full data array
 		 *  @dtopt Callbacks
 		 * 
@@ -8578,11 +8578,11 @@
 		 *  @type function
 		 *  @param {node} nHead "TR" element for the header
 		 *  @param {array} aData Full table data (as derived from the original HTML)
-		 *  @param {int} iStart Index for the current display starting point in the
+		 *  @param {int} iStart Home for the current display starting point in the
 		 *    display array
-		 *  @param {int} iEnd Index for the current display ending point in the
+		 *  @param {int} iEnd Home for the current display ending point in the
 		 *    display array
-		 *  @param {array int} aiDisplay Index array to translate the visual position
+		 *  @param {array int} aiDisplay Home array to translate the visual position
 		 *    to the full data array
 		 *  @dtopt Callbacks
 		 * 
@@ -10865,9 +10865,9 @@
 		 * Sorting that is applied to the table. Note that the inner arrays are
 		 * used in the following manner:
 		 * <ul>
-		 *   <li>Index 0 - column number</li>
-		 *   <li>Index 1 - current sorting direction</li>
-		 *   <li>Index 2 - index of asSorting for this column</li>
+		 *   <li>Home 0 - column number</li>
+		 *   <li>Home 1 - current sorting direction</li>
+		 *   <li>Home 2 - index of asSorting for this column</li>
 		 * </ul>
 		 * Note that this parameter will be set by the initialisation routine. To
 		 * set a default use {@link DataTable.defaults}.

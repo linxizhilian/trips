@@ -1,7 +1,7 @@
 <?php
 $this->load->view('header');
 ?>
-	新增文章
+	asdf
 <?php
 $this->load->view('footer');
 ?>

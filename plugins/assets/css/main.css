@@ -1,0 +1,171 @@
+/**
+  * 页面样式
+  * 每个页面对应
+  */
+/**
+  * 用户存放变量
+  */
+/**
+  * 用户存放minix方法
+  */
+.abs-center {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.abs-center-y {
+  position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+.abs-center-x {
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+body .navbar .navbar-header {
+  background: url(../images/logo.png) no-repeat center left !important;
+}
+#index {
+  height: inherit;
+  font-family: '微软雅黑';
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-bottom: 180px;
+}
+#index .sysTitle {
+  text-align: center;
+  color: #fff;
+  font-weight: 100;
+  padding: 5px;
+}
+#index header {
+  height: 80px;
+  background-color: #999;
+}
+#index #carousel-example-generic {
+  margin: 0 auto;
+  height: 600px;
+}
+#index #carousel-example-generic .carousel-inner {
+  width: 100%;
+  height: inherit;
+}
+#index #carousel-example-generic .carousel-inner .item {
+  width: 100%;
+  height: inherit;
+}
+#index #carousel-example-generic .carousel-inner .item img {
+  width: 100%;
+  height: inherit;
+}
+#index .masonry-container {
+  margin: 0 auto;
+}
+#index .masonry-container > * {
+  background-origin: border-box;
+}
+#index .masonry-container .thumbnail {
+  overflow: hidden;
+  position: relative;
+  background-origin: content-box;
+  border: none;
+}
+#index .masonry-container .thumbnail:before {
+  margin-top: 100%;
+}
+#index .masonry-container .thumbnail img {
+  width: 100%;
+  height: auto;
+}
+#index .masonry-container .thumbnail .caption {
+  position: absolute;
+  top: auto;
+  right: 3px;
+  bottom: 0;
+  left: 3px;
+  z-index: 1;
+  padding: 0;
+}
+#index .masonry-container .thumbnail .caption p {
+  text-indent: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 4;
+  color: #fff;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media screen and (min-width: 1380px) {
+  #index #carousel-example-generic {
+    max-width: 1380px;
+    height: 600px;
+  }
+  #index .masonry-container {
+    max-width: 1380px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #index #carousel-example-generic {
+    max-width: 90%;
+    height: 500px;
+  }
+  #index .masonry-container {
+    max-width: 90%;
+  }
+}
+@media screen and (max-width: 750px) {
+  #index #carousel-example-generic {
+    max-width: 700px;
+    height: 400px;
+  }
+  #index .masonry-container {
+    max-width: 100%;
+  }
+}
+#index footer {
+  width: 1024px;
+  height: 180px;
+  padding: 15px;
+  color: #999;
+}
+#index footer .contact {
+  font-size: 12px;
+  text-align: center;
+}
+#index footer .contact .prod-link {
+  margin-bottom: 5px;
+}
+#index footer .contact .prod-link a {
+  margin-left: 5px;
+}
+#index footer .info-block {
+  padding-top: 10px;
+  padding-left: 100px;
+  background: url(../images/page.png) no-repeat left;
+  background-position: 0 -65px;
+}
+#index footer .info-block .title {
+  font-size: 18px;
+  color: #80d6ef;
+}
+#home-container {
+  margin: 0;
+  padding-top: 1px;
+}
+#home-container h1 {
+  margin: 10px;
+}

@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Home extends CI_Controller {
 
 	/**
-	 * Index Page for this controller.
+	 * Home Page for this controller.
 	 *
 	 * Maps to the following URL
 	 * 		http://example.com/index.php/welcome
@@ -21,7 +21,7 @@ class Home extends CI_Controller {
 	//	首页
 	public function index()
 	{
-		$this->load->view('index');
+		$this->load->view('Home');
 	}
 
 	//  登录
