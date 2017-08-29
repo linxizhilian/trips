@@ -34,7 +34,6 @@
   transform: translateX(-50%);
 }
 html {
-  overflow: hidden;
   width: 100%;
   height: 100%;
 }

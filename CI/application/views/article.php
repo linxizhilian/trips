@@ -24,17 +24,17 @@ $this->load->view('header');
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="./assets/images/1.jpeg" alt="...">
+                        <img src="/plugins/assets/images/1.jpeg" alt="...">
                         <div class="carousel-caption">
                         </div>
                     </div>
                     <div class="item">
-                        <img src="./assets/images/3.jpeg" alt="...">
+                        <img src="/plugins/assets/images/3.jpeg" alt="...">
                         <div class="carousel-caption">
                         </div>
                     </div>
                     <div class="item">
-                        <img src="./assets/images/7.jpeg" alt="...">
+                        <img src="/plugins/assets/images/7.jpeg" alt="...">
                         <div class="carousel-caption">
                         </div>
                     </div>
@@ -386,7 +386,7 @@ $this->load->view('header');
 
 
                 <!--fix   start-->
-                <div class="article-nav-bar fix" id="fix" style="position: relative !important;">
+                <div class="article-nav-bar fix" id="fix" >
                     <ul>
                         <li class="bg1">狗狗</li>
                         <li class="bg2">猫猫</li>

@@ -1,5 +1,4 @@
 // JavaScript Document
-console.log(222);
 
 $(function () {
 
