@@ -1,0 +1,146 @@
+/**
+  * 页面样式
+  * 每个页面对应
+  */
+@import '_variable.less';
+@import '_mixin.less';
+
+body {
+	.navbar {
+		.navbar-header {
+			background: url(../images/logo.png) no-repeat center left !important;
+		}
+	}
+}
+
+#index {
+	.sysTitle {
+		text-align: center;
+		color: #fff;
+		font-weight: 100;
+		padding: 5px;
+		height: inherit;
+	}
+	font-family: '微软雅黑';
+  overflow-x: hidden;
+  overflow-y: scroll;
+	padding-bottom: 180px;
+	header {
+    height: 120px;
+    background-color: #999;
+  }
+	#carousel-example-generic {
+    margin: 0 auto;
+    height: 600px;
+    .carousel-inner {
+      width: 100%;
+      height: inherit;
+      .item {
+        width: 100%;
+        height: inherit;
+        img {
+          width: 100%;
+          height: inherit;
+        }
+      }
+    }
+	}
+  .masonry-container {
+    margin: 0 auto;
+    & > * {
+      background-origin: border-box;
+    }
+    .thumbnail {
+      overflow: hidden;
+      position: relative;
+      background-origin: content-box;
+      border: none;
+      &:before {
+        margin-top: 100%;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .caption {
+        .absolute(auto, 3px, 0, 3px, 1);
+        padding: 0;
+        p {
+          text-indent: 5px;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 4;
+          color: #fff;
+          margin: 0;
+          .singleLimitWidth();
+          //background: linear-gradient(to bottom, #fff, #333);
+        }
+      }
+    }
+    
+  }
+  @media screen and (min-width: 1380px) {
+    #carousel-example-generic {
+      max-width: 1380px;
+      height: 600px;
+    }
+    .masonry-container {
+      max-width: 1380px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    #carousel-example-generic {
+      max-width: 90%;
+      height: 500px;
+    }
+    .masonry-container {
+      max-width: 90%;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    #carousel-example-generic {
+      max-width: 700px;
+      height: 400px;
+    }
+    .masonry-container {
+      max-width: 100%;
+    }
+  }
+	footer {
+		width: 1024px;
+		height: 180px;
+		padding: 15px;
+		color: #999;
+		.contact {
+			font-size: 12px;
+			// padding-left: 320px;
+			text-align: center;
+			// background: url(../images/page.png) no-repeat 15px -5px;
+			.prod-link {
+				margin-bottom: 5px;
+				a {
+					margin-left: 5px;
+				}
+			}
+		}
+		.info-block {
+			padding-top: 10px;
+			padding-left: 100px;
+			background: url(../images/page.png) no-repeat left;
+			background-position: 0 -65px;
+			.title {
+				font-size: 18px;
+				color: #80d6ef;
+			}
+		}
+	}
+}
+
+
+#home-container {
+  margin: 0;
+  padding-top: 1px;
+  h1 {
+    margin: 10px;
+  }
+}

@@ -2,22 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--
-        ===
-        This comment should NOT be removed.
-
-        Charisma v2.0.0
-
-        Copyright 2012-2014 Muhammad Usman
-        Licensed under the Apache License v2.0
-        http://www.apache.org/licenses/LICENSE-2.0
-
-        http://usman.it
-        http://twitter.com/halalit_usman
-        ===
-    -->
     <meta charset="utf-8">
-    <title>Free HTML5 Bootstrap Admin Template</title>
+    <title>trips backend</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
     <meta name="author" content="Muhammad Usman">
@@ -38,6 +24,7 @@
     <link href='/plugins/css/jquery.iphone.toggle.css' rel='stylesheet'>
     <link href='/plugins/css/uploadify.css' rel='stylesheet'>
     <link href='/plugins/css/animate.min.css' rel='stylesheet'>
+    <link href='/plugins/css/ui-dialog.css' rel='stylesheet'>
 
     <!-- jQuery -->
     <script src="/plugins/bower_components/jquery/jquery.min.js"></script>
@@ -53,7 +40,14 @@
 </head>
 
 <body>
-<?php if (!isset($no_visible_elements) || !$no_visible_elements) { ?>
+<?php
+$islogin = isLogin();
+if($islogin['status']){
+    echo "<script>alert('未登录或登录已过期');window.location.href='/Home/index_login'</script>";
+}else{
+    $user = $islogin['info']['msg'];
+}
+if (!isset($no_visible_elements) || !$no_visible_elements) { ?>
     <!-- topbar starts -->
     <div class="navbar navbar-default" role="navigation">
 
@@ -64,19 +58,19 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"> <img alt="Charisma Logo" src="/plugins/img/logo20.png" class="hidden-xs"/>
+            <a class="navbar-brand" href="/Home/index"> <img alt="Charisma Logo" src="/plugins/img/logo20.png" class="hidden-xs"/>
                 <span>Charisma</span></a>
 
             <!-- user dropdown starts -->
             <div class="btn-group pull-right">
                 <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                    <i class="glyphicon glyphicon-user"></i><span class="hidden-sm hidden-xs"> admin</span>
+                    <i class="glyphicon glyphicon-user"></i><span class="hidden-sm hidden-xs"> <?php echo $user; ?></span>
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
                     <li><a href="#">Profile</a></li>
                     <li class="divider"></li>
-                    <li><a href="/Home/login">Logout</a></li>
+                    <li><a href="/Home/logout">Logout</a></li>
                 </ul>
             </div>
             <!-- user dropdown ends -->
@@ -147,26 +141,36 @@
                             <ul class="nav nav-pills nav-stacked">
                                 <li><a href="/Category/lists">分类列表</a></li>
                                 <li><a href="/Category/add">新增分类</a></li>
-                                <li><a href="/Category/edit">分类编辑</a></li>
+                                <li><a href="/Category/lists_xqk">详情页块数</a></li>
+                                <li><a href="/Category/add_xqk">新增块数</a></li>
+                            </ul>
+                        </li>
+                        <li class="accordion">
+                            <a href="#"><i class="glyphicon glyphicon-star"></i><span> 杂项管理</span></a>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="/Home/lists">杂项列表</a></li>
+                                <li><a href="/Home/add">新增杂项</a></li>
                             </ul>
                         </li>
                         <li class="accordion">
                             <a href="#"><i class="glyphicon glyphicon-list-alt"></i><span> 文章管理</span></a>
                             <ul class="nav nav-pills nav-stacked">
-                                <li><a href="/Article/lists">文章列表</a></li>
-                                <li><a href="/Article/add">新增文章</a></li>
+                                <li><a href="/Article/lists">一级文章列表</a></li>
+                                <li><a href="/Article/add">新增一级文章</a></li>
+                                <li><a href="/Article/lists_ed">二级文章列表</a></li>
+                                <li><a href="/Article/add_ed">新增二级文章</a></li>
                                 <li><a href="/Article/edit">文章编辑</a></li>
                             </ul>
                         </li>
 
-                        <li><a class="ajax-link" href="/Help/icon"><i
+                        <!-- <li><a class="ajax-link" href="##"><i
                                     class="glyphicon glyphicon-star"></i><span> Icons</span></a></li>
-                        <li><a href="/Help/error"><i class="glyphicon glyphicon-ban-circle"></i><span> Error Page</span></a>
-                        </li>
-                        <li><a href="/Home/login"><i class="glyphicon glyphicon-lock"></i><span> Login Page</span></a>
-                        </li>
+                        <li><a href="##"><i class="glyphicon glyphicon-ban-circle"></i><span> Error Page</span></a>
+                        </li> -->
+                        <!-- <li><a href="/Home/index_login"><i class="glyphicon glyphicon-lock"></i><span> Login Page</span></a>
+                        </li> -->
                     </ul>
-                    <label id="for-is-ajax" for="is-ajax"><input id="is-ajax" type="checkbox"> Ajax on menu</label>
+                    <!-- <label id="for-is-ajax" for="is-ajax"><input id="is-ajax" type="checkbox"> Ajax on menu</label> -->
                 </div>
             </div>
         </div>

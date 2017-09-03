@@ -2,37 +2,142 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Category extends CI_Controller {
+    
+    public function __construct(){
+        parent::__construct();
+        $this->load->model('category_model','category');
+        $this->load->model('part_model','part');
+    }
+    
+    //列表
+    public function lists()
+    {
+       $res['data'] = $this->category->get_list();
+       $this->load->view('category/lists',$res);
+    }
+    
+    //详情页块数列表
+    public function lists_xqk(){
+        $res['data'] = $this->part->get_list();
+       $this->load->view('category/lists_xqk',$res);
+    }
 
-	/**
-	 * Home Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see https://codeigniter.com/user_guide/general/urls.html
-	 */
-	//	列表
-	public function lists()
-	{
-		$this->load->view('category/lists');
-	}
-
-	//  新增
+    //新增视图
     public function add()
     {
         $this->load->view('category/add');
     }
+    
+    //新增块数视图
+    public function add_xqk(){
+        $this->load->view('category/add_xqk');
+    }
 
-    //  编辑
+
+    //新增执行
+    public function doadd(){
+        $category = trim($this->input->get_post('category'));
+        $note = trim($this->input->get_post('note'));
+        if(empty($category)){
+            $data['info']['msg'] = '分类名称不能为空';
+            $this->load->view('category/add',$data);
+        }else{
+            $insert_arr = array(
+                'category' => $category,
+                'note' => $note,
+                'add_time' => date('Y-m-d H:i:s',time())
+            );
+            $sec_arr = array(
+                'category' => $category,
+            );
+            $params['where'][] = $sec_arr;
+            $res_unq = $this->category->get_list($params);
+            if(empty($res_unq)){
+                $res = $this->category->insert($insert_arr);
+                $data['info']['msg'] = '添加成功';
+                $this->load->view('category/lists',$data);
+            }else{
+                $data['info']['msg'] = '此分类名称已添加,请勿重复使用';
+                $this->load->view('category/add',$data);
+            }
+        }
+    }
+    
+    //新增块数执行
+    public function doadd_xqk(){
+        $part = trim($this->input->get_post('part'));
+        $note = trim($this->input->get_post('note'));
+        if(empty($part)){
+            $data['info']['msg'] = '块名称不能为空';
+            $this->load->view('category/add_xqk',$data);
+        }else{
+            $insert_arr = array(
+                'part' => $part,
+                'note' => $note,
+                'add_time' => date('Y-m-d H:i:s',time())
+            );
+            $sec_arr = array(
+                'part' => $part,
+            );
+            $params['where'][] = $sec_arr;
+            $res_unq = $this->part->get_list($params);
+            if(empty($res_unq)){
+                $res = $this->part->insert($insert_arr);
+                $data['info']['msg'] = '添加成功';
+                $this->load->view('category/add_xqk',$data);
+            }else{
+                $data['info']['msg'] = '此块名称已添加,勿重复使用';
+                $this->load->view('category/add_xqk',$data);
+            }
+        }
+    }
+
+    //编辑展示 
     public function edit()
     {
-        $this->load->view('category/edit');
+        $id = trim($this->input->get_post('id'));
+        $where = array(array(
+            'id' => $id
+        ));
+        $res = $this->category->get_by($where);
+        $data['edit'] = $res;
+        $this->load->view('category/edit',$data);
+    }
+    
+    //块编辑展示
+    public function edit_xqk(){
+        $id = trim($this->input->get_post('id'));
+        $where = array(array(
+            'id' => $id
+        ));
+        $res = $this->part->get_by($where);
+        $data['edit'] = $res;
+        $this->load->view('category/edit_xqk',$data);
+    }
+    
+    //编辑执行
+    public function doedit(){
+        $id = trim($this->input->get_post('id'));
+        $category = trim($this->input->get_post('category'));
+        $note = trim($this->input->get_post('note'));
+        $info = array(
+            'category' => $category,
+            'note' => $note
+        );
+        $this->category->update($id,$info);
+        $this->lists();
+    }
+    
+    //块编辑执行
+    public function doedit_xqk(){
+        $id = trim($this->input->get_post('id'));
+        $part = trim($this->input->get_post('part'));
+        $note = trim($this->input->get_post('note'));
+        $info = array(
+            'part' => $part,
+            'note' => $note
+        );
+        $this->part->update($id,$info);
+        $this->lists_xqk();
     }
 }

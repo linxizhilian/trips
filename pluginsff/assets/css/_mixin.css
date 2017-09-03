@@ -1,0 +1,29 @@
+/**
+  * 用户存放minix方法
+  */
+.abs-center {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.abs-center-y {
+  position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+.abs-center-x {
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+}
