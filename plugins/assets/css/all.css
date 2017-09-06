@@ -626,7 +626,7 @@ body .navbar .navbar-header {
 }
 #index2 .masonry-container .thumbnail img {
   width: 100%;
-  height: auto;
+  height: 320px;
 }
 #index2 .masonry-container .thumbnail .caption {
   position: absolute;

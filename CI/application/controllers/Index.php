@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Index extends CI_Controller {
+class Index extends My_Controller {
 
 	/**
 	 * Home Page for this controller.
@@ -21,28 +21,49 @@ class Index extends CI_Controller {
 
     public function __construct(){
         parent::__construct();
-        $this->load->model('Article_model','article');
-        $this->load->model('Category_model','category');
+
     }
 
 	public function home()
 	{
         $all_category = $this->category->get_list();
 
-        echo "<pre>";
         foreach ($all_category as $key => $value)
         {
-            $where['where'] = "";
+			$where = [];
+			$tmmm = [];
+			$where['fields'] = 'id';
             $where['where'][] = "categoryid = ". $value['id'];
             $where['order_by'] = 'id';
-            $all_category[$key]['aids'] = $this->article->get_list($where);
-
+			$where['limit'] = array(10);
+            $ss = $this->article->get_list($where);
+            foreach ($ss as $v)
+			{
+				$tmmm[] = $v['id'];
+			}
+            $all_category[$key]['aids'] = $tmmm;
         }
+        $tmp = [];
+        foreach ($all_category as $item)
+		{
+			if (!empty($item['aids']))
+			{
+				$tmp = array_merge($item['aids'],$tmp);
+			}
+		}
+        //	首屏轮播数据
+		$lunbo = [53,78,44];
+		$data['lunbo'] = $lunbo;
+		//	今日推荐
+		$tuijian = [55,33,22,66];
+		$data['tuijian'] = $tuijian;
+        //	通过id 查找文章数据
+		$tmp = array_merge($lunbo,$tmp,$tuijian);
+		$article = $this->get_article_by_aids($tmp);
 
-        var_dump($all_category);
+		$data['article'] = $article;
+		$data['all_category'] = $all_category;
 //        get_list_by_pid
-        $all_article = $this->article->get_list($params);
-        var_dump($all_article);
-		$this->load->view('index');
+		$this->load->view('index',$data);
 	}
 }
