@@ -19,10 +19,12 @@ $this->load->view('header');
 
 					<?php foreach ($lunbo as $key => $aid):?>
                     <div class="item <?php if ($key == 0) echo "active";?>">
+                        <a target="_blank" href="<?php echo $article[$aid]['article_url']?>">
                         <img  class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['title']?>">
                         <div class="carousel-caption">
 							<?php echo $key?>
                         </div>
+                        </a>
                     </div>
 					<?php endforeach; ?>
 
@@ -47,10 +49,12 @@ $this->load->view('header');
 				<?php foreach ($tuijian as $aid):?>
                 <div class="col-md-3 col-sm-3 item">
                     <div class="thumbnail">
+                        <a target="_blank" href="<?php echo $article[$aid]['article_url']?>">
                         <img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['title']?>">
                         <div class="caption">
                             <p><?php echo $article[$aid]['title']?></p>
                         </div>
+                        </a>
                     </div>
                 </div><!--/.item  -->
 				<?php endforeach; ?>
@@ -76,11 +80,13 @@ $this->load->view('header');
 										continue;
 									}
 								?>
-                            <div class="col-md-6 col-sm-6 cat-6 thumbnail">
+                            <div class="col-md-6 col-sm-6  thumbnail">
+                                <a target="_blank" href="<?php echo $article[$aid]['article_url']?>">
                                 <img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['title']?>">
                                 <div class="caption">
                                     <p><?php echo $article[$aid]['title']?></p>
                                 </div>
+                                </a>
                             </div>
 							<?php endforeach; ?>
 							<?php
@@ -93,6 +99,7 @@ $this->load->view('header');
 							<?php
 							}
 							?>
+                        </div>
                     </div>
 
                     <div class="col-md-4 col-sm-4">
@@ -116,18 +123,24 @@ $this->load->view('header');
                         </div>
                         <div class="container-fluid">
                             <div class="row-fluid">
-                                <div class="col-md-8 col-sm-8 cat-5 thumbnail">
-                                    <img alt="140x140" src="/plugins/assets/images/1.jpeg" />
+                                <?php foreach ($all_category[3]['aids'] as $key => $aid):?>
+                                    <?php
+                                    if ($key >1)
+                                    {
+                                        continue;
+                                    }
+                                    ?>
+
+                                <div class="col-md-<?php echo ($key == 1) ? 'col-md-4 col-sm-4 ': 'col-md-8 col-sm-8 ' ?> thumbnail">
+                                    <a target="_blank" href="<?php echo $article[$aid]['article_url']?>">
+                                    <img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['title']?>" />
                                     <div class="caption">
-                                        <p>推荐二</p>
+                                        <p><?php echo $article[$aid]['title']?></p>
                                     </div>
+                                    </a>
                                 </div>
-                                <div class="col-md-4 col-sm-4 cat-6 thumbnail">
-                                    <img alt="140x140" src="/plugins/assets/images/2.jpeg" />
-                                    <div class="caption">
-                                        <p>推荐二</p>
-                                    </div>
-                                </div>
+                                <?php endforeach; ?>
+
                             </div>
                         </div>
                     </div>
@@ -144,18 +157,24 @@ $this->load->view('header');
                         <div class="row-fluid">
                             <div class="col-md-12">
                                 <div class="row-fluid">
-                                    <div class="col-md-4 col-sm-4 cat-6 thumbnail">
-                                        <img alt="140x140" src="/plugins/assets/images/4.jpeg" />
-                                        <div class="caption">
-                                            <p>推荐二</p>
+                                    <?php foreach ($all_category[4]['aids'] as $key => $aid):?>
+                                        <?php
+                                        if ($key >1)
+                                        {
+                                            continue;
+                                        }
+                                        ?>
+
+                                        <div class="col-md-<?php echo ($key != 1) ? 'col-md-4 col-sm-4 ': 'col-md-8 col-sm-8 ' ?> thumbnail">
+                                            <a target="_blank" href="<?php echo $article[$aid]['article_url']?>">
+                                            <img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['title']?>" />
+                                            <div class="caption">
+                                                <p><?php echo $article[$aid]['title']?></p>
+                                            </div>
+                                            </a>
                                         </div>
-                                    </div>
-                                    <div class="col-md-8 col-sm-8 cat-5 thumbnail">
-                                        <img alt="140x140" src="/plugins/assets/images/3.jpeg" />
-                                        <div class="caption">
-                                            <p>推荐二</p>
-                                        </div>
-                                    </div>
+                                    <?php endforeach; ?>
+
                                 </div>
                             </div>
                         </div>
@@ -174,18 +193,24 @@ $this->load->view('header');
                         </div>
                         <div class="container-fluid">
                             <div class="row-fluid">
-                                <div class="col-md-8 col-sm-8 cat-5 thumbnail">
-                                    <img alt="140x140" src="/plugins/assets/images/1.jpeg" />
-                                    <div class="caption">
-                                        <p>推荐二</p>
+                                <?php foreach ($all_category[5]['aids'] as $key => $aid):?>
+                                    <?php
+                                    if ($key >1)
+                                    {
+                                        continue;
+                                    }
+                                    ?>
+
+                                    <div class="col-md-<?php echo ($key != 1) ? 'col-md-4 col-sm-4 ': 'col-md-8 col-sm-8 ' ?> thumbnail">
+                                        <a target="_blank" href="<?php echo $article[$aid]['article_url']?>">
+                                        <img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['title']?>" />
+                                        <div class="caption">
+                                            <p><?php echo $article[$aid]['title']?></p>
+                                        </div>
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="col-md-4 col-sm-4 cat-6 thumbnail">
-                                    <img alt="140x140" src="/plugins/assets/images/2.jpeg" />
-                                    <div class="caption">
-                                        <p>推荐二</p>
-                                    </div>
-                                </div>
+                                <?php endforeach; ?>
+                                
                             </div>
                         </div>
                     </div>

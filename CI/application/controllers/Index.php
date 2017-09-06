@@ -27,7 +27,7 @@ class Index extends My_Controller {
 	public function home()
 	{
         $all_category = $this->category->get_list();
-
+        $tmpp = [];
         foreach ($all_category as $key => $value)
         {
 			$where = [];
@@ -41,8 +41,11 @@ class Index extends My_Controller {
 			{
 				$tmmm[] = $v['id'];
 			}
-            $all_category[$key]['aids'] = $tmmm;
+            $value['aids'] = $tmmm;
+            $tmpp[$value['id']] = $value;
+
         }
+        $all_category = $tmpp;
         $tmp = [];
         foreach ($all_category as $item)
 		{

@@ -41,7 +41,7 @@ class My_Controller extends CI_Controller {
 		foreach ($res as $key => $value)
 		{
 			$value['img_url'] = $this->get_img_url($value['picname']);
-			$value['articleurl'] = '/article/'.$value['id'].'.html';
+			$value['article_url'] = 'Articles/index/'.$value['id'].'.html';
 			$tmp[$value['id']] = $value;
 		}
 		return $tmp;
