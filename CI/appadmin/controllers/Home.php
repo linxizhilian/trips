@@ -12,7 +12,7 @@ class Home extends CI_Controller {
     }
     
     public function pages(){
-        $this->load->view('form');
+        $this->load->view('table');
     }
 
     public function test(){
@@ -68,7 +68,10 @@ class Home extends CI_Controller {
     //杂项列表
     public function lists()
     {
-       $res['data'] = $this->others->get_list();
+       $param['where'] = array(array(
+            'state' => 1
+        ));
+       $res['data'] = $this->others->get_list($param);
        $this->load->view('home/lists',$res);
     }
     
@@ -81,7 +84,7 @@ class Home extends CI_Controller {
     //新增杂项执行
     public function doadd(){
         $key = trim($this->input->get_post('key'));
-        $value = trim($this->input->get_post('value'));
+        $value = trim($this->input->get_post('content'));
         $note = trim($this->input->get_post('note'));
         if(empty($key) || empty($value)){
             $data['info']['msg'] = '杂项名称和内容都不能为空';
@@ -95,13 +98,14 @@ class Home extends CI_Controller {
             $sec_arr = array(
                 'key' => $key,
                 'value' => $value,
+                'state' => 1
             );
             $params['where'][] = $sec_arr;
             $res_unq = $this->others->get_list($params);
             if(empty($res_unq)){
                 $res = $this->others->insert($insert_arr);
-                $data['info']['msg'] = '添加成功';
-                $this->load->view('home/add',$data);
+                //$data['info']['msg'] = '添加成功';
+                $this->lists();
             }else{
                 $data['info']['msg'] = '此杂项名称或内容已添加,请勿重复添加';
                 $this->load->view('home/add',$data);
@@ -125,7 +129,7 @@ class Home extends CI_Controller {
     public function doedit(){
         $id = trim($this->input->get_post('id'));
         $key = trim($this->input->get_post('key'));
-        $value = trim($this->input->get_post('value'));
+        $value = trim($this->input->get_post('content'));
         $note = trim($this->input->get_post('note'));
         $info = array(
             'key' => $key,
@@ -139,7 +143,10 @@ class Home extends CI_Controller {
     //杂项删除
     public function del(){
         $id = trim($this->input->get_post('id'));
-        $this->others->delete($id);
+        $info = array(
+            'state' => 2
+        );
+        $this->others->update($id,$info);
         $this->lists();
     }
 }

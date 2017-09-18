@@ -4,7 +4,7 @@ $this->load->view('header');
 <div>
     <ul class="breadcrumb">
         <li>
-            <a href="/Category/edit_xqk">块编辑</a>
+            <a href="#">块编辑</a>
         </li>
     </ul>
 </div>

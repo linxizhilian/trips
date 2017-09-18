@@ -4,7 +4,7 @@ $this->load->view('header');
 <div>
     <ul class="breadcrumb">
         <li>
-            <a href="/Article/add">新增一级文章</a>
+            <a href="/Article/add">新增首页文章</a>
         </li>
     </ul>
 </div>
@@ -12,7 +12,7 @@ $this->load->view('header');
     <div class="box col-md-12">
         <div class="box-inner">
             <div class="box-header well">
-                <h2><i class="glyphicon glyphicon-info-sign"></i> 新增一级文章</h2>
+                <h2><i class="glyphicon glyphicon-info-sign"></i> 新增首页文章</h2>
 
                 <div class="box-icon">
                     <a href="#" class="btn btn-setting btn-round btn-default"><i

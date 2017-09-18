@@ -4,7 +4,7 @@ $this->load->view('header');
 <div>
     <ul class="breadcrumb">
         <li>
-            <a href="/Category/add_xqk">新增块数</a>
+            <a href="/Category/add_xqk">新增模块</a>
         </li>
     </ul>
 </div>
@@ -12,7 +12,7 @@ $this->load->view('header');
     <div class="box col-md-12">
         <div class="box-inner">
             <div class="box-header well">
-                <h2><i class="glyphicon glyphicon-info-sign"></i> 新增块数</h2>
+                <h2><i class="glyphicon glyphicon-info-sign"></i> 新增模块</h2>
 
                 <div class="box-icon">
                     <a href="#" class="btn btn-setting btn-round btn-default"><i

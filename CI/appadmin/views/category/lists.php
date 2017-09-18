@@ -46,7 +46,7 @@ $this->load->view('header');
                                     echo"<td class=\"center\">";
                                     echo"<a class=\"btn btn-info\" href=\"/Category/edit?id={$data[$i]['id']}\">";
                                     echo"<i class=\"glyphicon glyphicon-edit icon-white\"></i> 修改</a> ";
-                                    echo" <a class=\"btn btn-danger\" href=\"#\">";
+                                    echo" <a class=\"btn btn-danger\" href=\"#\" onclick=\"disp_confirm(this)\" value=\"id={$data[$i]['id']}\">";
                                     echo"<i class=\"glyphicon glyphicon-trash icon-white\"></i> 删除</a>";
                                     echo"</td>";
                                     echo"</tr>";
@@ -63,6 +63,16 @@ $this->load->view('header');
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    function disp_confirm(obj){
+      var r=confirm("确定删除?")
+      var val = $(obj).attr('value');
+      if (r==true){
+            window.location.href="/Category/del?"+val;
+       }else{
+       }
+    }
+</script>
 <?php
 $this->load->view('footer');
 ?>

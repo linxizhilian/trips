@@ -25,6 +25,7 @@
     <link href='/plugins/css/uploadify.css' rel='stylesheet'>
     <link href='/plugins/css/animate.min.css' rel='stylesheet'>
     <link href='/plugins/css/ui-dialog.css' rel='stylesheet'>
+    <link href="/plugins/css/jquery.dataTables.css" rel="stylesheet">
 
     <!-- jQuery -->
     <script src="/plugins/bower_components/jquery/jquery.min.js"></script>
@@ -141,8 +142,13 @@ if (!isset($no_visible_elements) || !$no_visible_elements) { ?>
                             <ul class="nav nav-pills nav-stacked">
                                 <li><a href="/Category/lists">分类列表</a></li>
                                 <li><a href="/Category/add">新增分类</a></li>
-                                <li><a href="/Category/lists_xqk">详情页块数</a></li>
-                                <li><a href="/Category/add_xqk">新增块数</a></li>
+                            </ul>
+                        </li>
+                        <li class="accordion">
+                            <a href="#"><i class="glyphicon glyphicon-star"></i><span> 详情页模块管理</span></a>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="/Category/lists_xqk">模块列表</a></li>
+                                <li><a href="/Category/add_xqk">新增模块</a></li>
                             </ul>
                         </li>
                         <li class="accordion">
@@ -155,11 +161,9 @@ if (!isset($no_visible_elements) || !$no_visible_elements) { ?>
                         <li class="accordion">
                             <a href="#"><i class="glyphicon glyphicon-list-alt"></i><span> 文章管理</span></a>
                             <ul class="nav nav-pills nav-stacked">
-                                <li><a href="/Article/lists">一级文章列表</a></li>
-                                <li><a href="/Article/add">新增一级文章</a></li>
-                                <li><a href="/Article/lists_ed">二级文章列表</a></li>
-                                <li><a href="/Article/add_ed">新增二级文章</a></li>
-                                <li><a href="/Article/edit">文章编辑</a></li>
+                                <li><a href="/Article/lists">首页文章列表</a></li>
+                                <li><a href="/Article/add">新增首页文章</a></li>
+                                <!-- <li><a href="/Article/lists_ed">模块文章列表</a></li> -->
                             </ul>
                         </li>
 

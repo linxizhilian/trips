@@ -12,13 +12,20 @@ class Category extends CI_Controller {
     //列表
     public function lists()
     {
-       $res['data'] = $this->category->get_list();
+       $param['where'] = array(array(
+            'state' => 1
+        ));
+       $res['data'] = $this->category->get_list($param);
+       //$sql = $this->category->_db->last_query();
        $this->load->view('category/lists',$res);
     }
     
     //详情页块数列表
     public function lists_xqk(){
-        $res['data'] = $this->part->get_list();
+        $param['where'] = array(array(
+            'state' => 1
+        ));
+        $res['data'] = $this->part->get_list($param);
        $this->load->view('category/lists_xqk',$res);
     }
 
@@ -49,13 +56,14 @@ class Category extends CI_Controller {
             );
             $sec_arr = array(
                 'category' => $category,
+                'state' => 1
             );
             $params['where'][] = $sec_arr;
             $res_unq = $this->category->get_list($params);
             if(empty($res_unq)){
                 $res = $this->category->insert($insert_arr);
-                $data['info']['msg'] = '添加成功';
-                $this->load->view('category/lists',$data);
+                //$data['info']['msg'] = '添加成功';
+                $this->lists();
             }else{
                 $data['info']['msg'] = '此分类名称已添加,请勿重复使用';
                 $this->load->view('category/add',$data);
@@ -78,13 +86,14 @@ class Category extends CI_Controller {
             );
             $sec_arr = array(
                 'part' => $part,
+                'state' => 1
             );
             $params['where'][] = $sec_arr;
             $res_unq = $this->part->get_list($params);
             if(empty($res_unq)){
                 $res = $this->part->insert($insert_arr);
-                $data['info']['msg'] = '添加成功';
-                $this->load->view('category/add_xqk',$data);
+                //$data['info']['msg'] = '添加成功';
+                $this->lists_xqk();
             }else{
                 $data['info']['msg'] = '此块名称已添加,勿重复使用';
                 $this->load->view('category/add_xqk',$data);
@@ -120,9 +129,11 @@ class Category extends CI_Controller {
         $id = trim($this->input->get_post('id'));
         $category = trim($this->input->get_post('category'));
         $note = trim($this->input->get_post('note'));
+        $aids = trim($this->input->get_post('aids'));
         $info = array(
             'category' => $category,
-            'note' => $note
+            'note' => $note,
+            'aids' => $aids
         );
         $this->category->update($id,$info);
         $this->lists();
@@ -136,6 +147,26 @@ class Category extends CI_Controller {
         $info = array(
             'part' => $part,
             'note' => $note
+        );
+        $this->part->update($id,$info);
+        $this->lists_xqk();
+    }
+    
+    //类别管理删除(修改state)
+    public function del(){
+        $id = trim($this->input->get_post('id'));
+        $info = array(
+            'state' => 2
+        );
+        $this->category->update($id,$info);
+        $this->lists();
+    }
+    
+    //模块管理删除(part表,修改state)
+    public function xq_del(){
+        $id = trim($this->input->get_post('id'));
+        $info = array(
+            'state' => 2
         );
         $this->part->update($id,$info);
         $this->lists_xqk();

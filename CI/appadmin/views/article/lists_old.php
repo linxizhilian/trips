@@ -62,13 +62,10 @@ $this->load->view('header');
                                     echo"<td class=\"center\">{$data[$i]['instruction']}<br><a class=\"btn btn-info btn-xs\" href=\"#\" onclick=\"edit_c(this)\" id=\"{$data[$i]['id']}\"><i class=\"glyphicon glyphicon-edit icon-white\"></i> 修改</a></td>";
                                     echo"<td class=\"center\">{$type[$data[$i]['categoryid']]}</td>";
                                     echo"<td class=\"center\">";
-                                    if($data[$i]['state']==1){
-                                        echo"<a class=\"btn btn-info\" href=\"/Article/pic_detail?id={$data[$i]['id']}\">";
-                                        echo"<i class=\"glyphicon glyphicon-edit icon-white\"></i> 图片详情</a> ";
-                                    }else{
-                                        echo"<a class=\"btn btn-danger\" href=\"/Article/pic_detail?id={$data[$i]['id']}\">";
-                                        echo"<i class=\"glyphicon glyphicon-edit icon-white\"></i> 完善图片</a> ";
-                                    }
+                                    echo"<a class=\"btn btn-info\" href=\"#\" onclick=\"see_pic(this)\" pic=\"{$data[$i]['picname']}\">";
+                                    echo"<i class=\"glyphicon glyphicon-edit icon-white\"></i> 查看图片</a> ";
+                                    echo"<a class=\"btn btn-info\" href=\"#\" onclick=\"edit_pic(this)\" pic=\"{$data[$i]['picname']}\" id=\"{$data[$i]['id']}\" data-toggle=\"modal\" data-target=\"#myModal_re\">";
+                                    echo"<i class=\"glyphicon glyphicon-edit icon-white\"></i> 重传图片</a> ";
                                     echo" <a class=\"btn btn-danger\" href=\"#\" onclick=\"disp_confirm(this)\" value=\"id={$data[$i]['id']}\">";
                                     echo"<i class=\"glyphicon glyphicon-trash icon-white\"></i> 删除</a>";
                                     echo" <a class=\"btn btn-success\" href=\"/Article/addpart?pid={$data[$i]['id']}\">";

@@ -4,7 +4,7 @@ $this->load->view('header');
 <div>
     <ul class="breadcrumb">
         <li>
-            <a href="/Category/edit">分类编辑</a>
+            <a href="#">分类编辑</a>
         </li>
     </ul>
 </div>
@@ -34,6 +34,10 @@ $this->load->view('header');
                             <div class="form-group">
                                 <label for="note">备注</label>
                                 <input type="text" class="form-control" id="note" name="note" placeholder="备注" value="<?php if(!empty($edit)){echo $edit['note'];} ?>">
+                            </div>
+                            <div class="form-group">
+                                <label for="aids">AIDS</label>
+                                <input type="text" class="form-control" id="aids" name="aids" placeholder="aids" value="<?php if(!empty($edit)){echo $edit['aids'];} ?>">
                             </div>
                             <div class="">
                                 <span style="color:red;" id="shown" hidden>分类名称不能为空</span>

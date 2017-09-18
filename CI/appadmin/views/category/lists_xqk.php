@@ -4,7 +4,7 @@ $this->load->view('header');
 <div>
     <ul class="breadcrumb">
         <li>
-            <a href="/Category/lists_xqk">详情页块数</a>
+            <a href="/Category/lists_xqk">模块列表</a>
         </li>
     </ul>
 </div>
@@ -12,7 +12,7 @@ $this->load->view('header');
     <div class="box col-md-12">
         <div class="box-inner">
             <div class="box-header well">
-                <h2><i class="glyphicon glyphicon-info-sign"></i> 详情页块数</h2>
+                <h2><i class="glyphicon glyphicon-info-sign"></i> 模块列表</h2>
 
                 <div class="box-icon">
                     <a href="#" class="btn btn-setting btn-round btn-default"><i
@@ -46,7 +46,7 @@ $this->load->view('header');
                                     echo"<td class=\"center\">";
                                     echo"<a class=\"btn btn-info\" href=\"/Category/edit_xqk?id={$data[$i]['id']}\">";
                                     echo"<i class=\"glyphicon glyphicon-edit icon-white\"></i> 修改</a> ";
-                                    echo" <a class=\"btn btn-danger\" href=\"#\">";
+                                    echo" <a class=\"btn btn-danger\" href=\"#\" onclick=\"disp_confirm(this)\" value=\"id={$data[$i]['id']}\">";
                                     echo"<i class=\"glyphicon glyphicon-trash icon-white\"></i> 删除</a>";
                                     echo"</td>";
                                     echo"</tr>";
@@ -63,6 +63,16 @@ $this->load->view('header');
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    function disp_confirm(obj){
+      var r=confirm("确定删除?")
+      var val = $(obj).attr('value');
+      if (r==true){
+            window.location.href="/Category/xq_del?"+val;
+       }else{
+       }
+    }
+</script>
 <?php
 $this->load->view('footer');
 ?>
