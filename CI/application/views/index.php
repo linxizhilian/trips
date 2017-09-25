@@ -20,7 +20,7 @@ $this->load->view('header');
 					<?php foreach ($lunbo as $key => $aid):?>
                     <div class="item <?php if ($key == 0) echo "active";?>">
                         <a target="_blank" href="<?php echo $article[$aid]['article_url']?>">
-                        <img  class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['title']?>">
+                        <img  class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['instruction']?>">
                         <div class="carousel-caption">
 							<?php echo $key?>
                         </div>
@@ -50,9 +50,9 @@ $this->load->view('header');
                 <div class="col-md-3 col-sm-3 item">
                     <div class="thumbnail">
                         <a target="_blank" href="<?php echo $article[$aid]['article_url']?>">
-                        <img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['title']?>">
+                        <img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['instruction']?>">
                         <div class="caption">
-                            <p><?php echo $article[$aid]['title']?></p>
+                            <p><?php echo $article[$aid]['instruction']?></p>
                         </div>
                         </a>
                     </div>
@@ -82,9 +82,9 @@ $this->load->view('header');
 								?>
                             <div class="col-md-6 col-sm-6  thumbnail">
                                 <a target="_blank" href="<?php echo $article[$aid]['article_url']?>">
-                                <img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['title']?>">
+                                <img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['instruction']?>">
                                 <div class="caption">
-                                    <p><?php echo $article[$aid]['title']?></p>
+                                    <p><?php echo $article[$aid]['instruction']?></p>
                                 </div>
                                 </a>
                             </div>
@@ -133,9 +133,9 @@ $this->load->view('header');
 
                                 <div class="col-md-<?php echo ($key == 1) ? 'col-md-4 col-sm-4 ': 'col-md-8 col-sm-8 ' ?> thumbnail">
                                     <a target="_blank" href="<?php echo $article[$aid]['article_url']?>">
-                                    <img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['title']?>" />
+                                    <img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['instruction']?>" />
                                     <div class="caption">
-                                        <p><?php echo $article[$aid]['title']?></p>
+                                        <p><?php echo $article[$aid]['instruction']?></p>
                                     </div>
                                     </a>
                                 </div>
@@ -167,9 +167,9 @@ $this->load->view('header');
 
                                         <div class="col-md-<?php echo ($key != 1) ? 'col-md-4 col-sm-4 ': 'col-md-8 col-sm-8 ' ?> thumbnail">
                                             <a target="_blank" href="<?php echo $article[$aid]['article_url']?>">
-                                            <img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['title']?>" />
+                                            <img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['instruction']?>" />
                                             <div class="caption">
-                                                <p><?php echo $article[$aid]['title']?></p>
+                                                <p><?php echo $article[$aid]['instruction']?></p>
                                             </div>
                                             </a>
                                         </div>
@@ -203,9 +203,9 @@ $this->load->view('header');
 
                                     <div class="col-md-<?php echo ($key != 1) ? 'col-md-4 col-sm-4 ': 'col-md-8 col-sm-8 ' ?> thumbnail">
                                         <a target="_blank" href="<?php echo $article[$aid]['article_url']?>">
-                                        <img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['title']?>" />
+                                        <img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['instruction']?>" />
                                         <div class="caption">
-                                            <p><?php echo $article[$aid]['title']?></p>
+                                            <p><?php echo $article[$aid]['instruction']?></p>
                                         </div>
                                         </a>
                                     </div>

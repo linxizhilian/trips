@@ -1,5 +1,28 @@
-
-
+<style>
+	.footer	{margin: auto;}
+	.footer { width:100%; height:120px; background:#2c3a46; }
+	.footer .l img { margin-top:30px; }
+	.footer .r { margin-left:75px; }
+	.footer .r .link { height:32px; line-height:32px; margin-top:28px; }
+	.footer .r .link a { font-size:14px; color:#fff; margin-right:43px; }
+	.footer .r .p { line-height:32px; font-size:14px; color:#999; }
+</style>
+<div class="footer">
+	<div class="wrap clearfix">
+		<div class="l fl">
+			<img src="/plugins/img/f_bg.png">
+		</div>
+		<div class="r fl">
+			<div class="link">
+				<a href="">联系我们</a>
+				<a href="">关于我们</a>
+			</div>
+			<div class="p">
+				Copyright © food666.com. All Rights Reserved.     京ICP证099999号
+			</div>
+		</div>
+	</div>
+</div>
 <!--link-js-->
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
