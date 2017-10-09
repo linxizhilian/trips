@@ -7,18 +7,17 @@
 	.footer .r .link a { font-size:14px; color:#fff; margin-right:43px; }
 	.footer .r .p { line-height:32px; font-size:14px; color:#999; }
 </style>
-<div class="footer">
-	<div class="wrap clearfix">
-		<div class="l fl">
-			<img src="/plugins/img/f_bg.png">
-		</div>
-		<div class="r fl">
-			<div class="link">
-				<a href="">联系我们</a>
-				<a href="">关于我们</a>
-			</div>
-			<div class="p">
-				Copyright © food666.com. All Rights Reserved.     京ICP证099999号
+<div class="sub-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<div class="copy-box">
+					<p class="">北京爱旅游有限公司 电话：010-8888888</p>
+					<p>地址：北京市海淀区七彩城C座802</p>
+					<p>Copyright © 2017 tourism.com All Rights Reserved</p>
+					<p>京ICP备140444xx号-1 京公网安备110105020270xx</p>
+				</div>
+
 			</div>
 		</div>
 	</div>

@@ -45,44 +45,18 @@ $this->load->view('header');
 <!--				</a>-->
 <!--			</div>-->
 
-
-			<div class="container-fluid">
-				<div class="row-fluid container-fluid ">
-
-						<div class="tabbable" id="tabs-147073" style="margin: 200px auto; width: 600px;">
-							<ul class="nav nav-tabs">
-								<li class="active">
-									<a href="#panel-about" data-toggle="tab">关于我们</a>
-								</li>
-								<li>
-									<a href="#panel-contact" data-toggle="tab">联系我们</a>
-								</li>
-								<li>
-									<a href="#panel-pay" data-toggle="tab">Pay for me</a>
-								</li>
-							</ul>
-
-							<div class="tab-content" style="height: 600px;">
-								<div class="tab-pane active" id="panel-about">
-									<p>
-										关于我们.
-									</p>
-								</div>
-								<div class="tab-pane" id="panel-contact">
-									<p>
-										联系我们.
-									</p>
-								</div>
-								<div class="tab-pane" id="panel-pay">
-									<p>
-										Pay for me.
-									</p>
-								</div>
-							</div>
-						</div>
-
-				</div>
+			<div class="header-list">
+				<a href="#">主页<i class="arrow"></i></a>
+				<a href="#" class="active">团队介绍<i class="arrow"></i></a>
+				<a href="#">联系我们<i class="arrow"></i></a>
 			</div>
+
+			<div class="" style="height: 306px;">
+				内容显示
+			</div>
+
+
+
 		</div>
 	</div>
 </div>
