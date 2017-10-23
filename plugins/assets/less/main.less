@@ -14,11 +14,13 @@ body {
 }
 
 #index {
+	height: inherit;
 	.sysTitle {
 		text-align: center;
 		color: #fff;
 		font-weight: 100;
 		padding: 5px;
+		
 	}
 	font-family: '微软雅黑';
   overflow-x: hidden;
@@ -141,87 +143,5 @@ body {
   padding-top: 1px;
   h1 {
     margin: 10px;
-  }
-}
-
-
-.header-list {
-  position: relative;
-  width: 100%;
-  text-align: center;
-  margin: 40px 0 10px;
-  box-shadow: 5px 5px 10px #d2d2d2;
-  a {
-    display: inline-block;
-    position: relative;
-    height: 53px;
-    margin: 0;
-    text-align: center;
-    padding: 0 32px;
-    border-right: 1px solid #dcdcdc;
-    line-height: 53px;
-    font-size: 14px;
-    color: #000;
-    text-decoration: none;
-    &:last-child {
-      border-right: 0;
-    }
-    &:hover {
-      color: #f78c0d;
-      text-decoration: none;
-      cursor: pointer;
-    }
-    &.active {
-      color: #f78c0d;
-      .arrow {
-        display: inline-block;
-        position: absolute;
-        bottom: -15px;
-        left: 50%;
-        width: 16px;
-        height: 16px;
-        border-right: 1px solid #ddd;
-        border-bottom: 1px solid #ddd;
-        transform: rotate(45deg) translateX(-70%);
-        background-color: #fff;
-      }
-    }
-  }
-}
-
-.sub-footer {
-  background-color: #020202;
-  padding: 40px 0;
-  
-  @media (min-width: 1200px) {
-    .container {
-      width: 1170px;
-    }
-  }
-  @media (min-width: 992px) {
-    .container {
-      width: 970px;
-    }
-  }
-  @media (min-width: 768px) {
-    .container {
-      width: 750px;
-    }
-  }
-  .container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    p {
-      margin: 1px;
-      color: rgba(255, 255, 255, 0.6);
-      &:last-child {
-        margin-bottom: 10px;
-      }
-    }
-  }
-  .copy-box {
-    font-size: 12px;
   }
 }

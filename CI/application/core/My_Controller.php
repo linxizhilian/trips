@@ -22,6 +22,7 @@ class My_Controller extends CI_Controller {
         parent::__construct();
 		$this->load->model('Article_model','article');
 		$this->load->model('Category_model','category');
+		$this->load->model('Other_model','other');
     }
 
     //	通过文章id查找文章属性

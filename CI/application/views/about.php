@@ -46,13 +46,13 @@ $this->load->view('header');
 <!--			</div>-->
 
 			<div class="header-list">
-				<a href="#">主页<i class="arrow"></i></a>
-				<a href="#" class="active">团队介绍<i class="arrow"></i></a>
-				<a href="#">联系我们<i class="arrow"></i></a>
+				<a href="/Help/index?a=copyright" class="<?php echo $a == 'copyright'? 'active' : '' ?>">版权声明<i class="arrow"></i></a>
+				<a href="/Help/index?a=about" class="<?php echo $a == 'about' ?  'active' : '' ?>">团队介绍<i class="arrow"></i></a>
+				<a href="/Help/index?a=contentus" class="<?php echo $a == 'contentus' ?  'active' : '' ?>">联系我们<i class="arrow"></i></a>
 			</div>
 
-			<div class="" style="height: 306px;">
-				内容显示
+			<div class="" style="height: ;">
+				<?= $content?>
 			</div>
 
 
