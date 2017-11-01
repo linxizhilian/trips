@@ -12,6 +12,11 @@
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<div class="copy-box">
+					<p>
+						<a href="/Help/index?a=copyright">版权申明</a>
+						<a href="/Help/index?a=about">关于我们</a>
+						<a href="/Help/index?a=contentus">联系我们</a>
+					</p>
 					<p class="">北京爱旅游有限公司 电话：010-8888888</p>
 					<p>地址：北京市海淀区七彩城C座802</p>
 					<p>Copyright © 2017 tourism.com All Rights Reserved</p>
