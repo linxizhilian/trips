@@ -21,6 +21,8 @@ class My_Controller extends CI_Controller {
     public function __construct(){
         parent::__construct();
 		$this->load->model('Article_model','article');
+		$this->load->model('Part_model','part');
+		$this->load->model('Article_second_model','article_part');
 		$this->load->model('Category_model','category');
 		$this->load->model('Other_model','other');
     }
@@ -42,7 +44,7 @@ class My_Controller extends CI_Controller {
 		foreach ($res as $key => $value)
 		{
 			$value['img_url'] = $this->get_img_url($value['picname']);
-			$value['article_url'] = 'Articles/index/'.$value['id'].'.html';
+			$value['article_url'] = '/Articles/index/'.$value['id'].'.html';
 			$tmp[$value['id']] = $value;
 		}
 		return $tmp;
