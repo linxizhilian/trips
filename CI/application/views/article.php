@@ -20,21 +20,14 @@ $this->load->view('header');
                     <ol data-target="#carousel-example-generic" data-slide-to="2"></ol>
                 </ol>
                 <div class="carousel-inner" role="listbox">
+					<?php foreach ($pics as $key => $value):?>
                     <div class="item active">
-                        <img src="/plugins/assets/images/1.jpeg" alt="...">
+                        <img class="lazy_src" img_src="<?php echo $value?>" alt="...">
                         <div class="carousel-caption">
                         </div>
                     </div>
-                    <div class="item">
-                        <img src="/plugins/assets/images/3.jpeg" alt="...">
-                        <div class="carousel-caption">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="/plugins/assets/images/7.jpeg" alt="...">
-                        <div class="carousel-caption">
-                        </div>
-                    </div>
+					<?php endforeach; ?>
+
                 </div>
                 <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -62,13 +55,9 @@ $this->load->view('header');
 
             <!--content start-->
             <div>
-                <pre>
-                Tour code: CL-D-01A                                                                                                     Available: Daily
-
-                Duration: One Full Day                                                                                                  Starts/ends: On your request
-
-                Attractions: Tian’anmen Square, Forbidden City & Great Wall at Mutianyu
-                </pre>
+				<pre>
+					<?php echo $title_tag['content'];?>
+				</pre>
             </div>
 
 
@@ -94,6 +83,8 @@ $this->load->view('header');
                 <div class="article-nav-bar fix col-md-2 col-sm-2" style="color: #1f8c22;" id="fix" >
                     <ul>
                         <?php foreach ($all_content as $key => $value):?>
+							<?php
+							?>
 
                         <li class="bg<?=$key?>" style="height: 50px;background-color: #0bcb9a;margin-bottom: 2px;"><?php echo $part[$value['typeid']]['part'] ;?></li>
                         <?php endforeach; ?>

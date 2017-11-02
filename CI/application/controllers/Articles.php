@@ -29,6 +29,14 @@ class Articles extends My_Controller {
         $product_id = $this->uri->segment(3, 0);
 
         $product_id = trim($product_id,'.html');
+        //	查找文章信息
+		$article = $this->article->get($product_id);
+		$pics = json_decode($article['arr_pic']);
+		foreach ($pics as $key => $pic)
+		{
+			$pics[$key] = $this->get_img_url($pic);
+		}
+
         $where['where'][] = "state = 1 and pid = ".$product_id;
         $where['order_by'][] = "id asc";
         $all_content = $this->article_part->get_list($where);
@@ -39,6 +47,18 @@ class Articles extends My_Controller {
         {
             $part[$value['id']] = $value;
         }
+		$title_tag = [];
+        foreach ($all_content as $key => $value)
+		{
+			if ($value['typeid'] == 6)
+			{
+				//	标题下小tag
+				$title_tag = $value;
+				unset($all_content[$key]);
+			}
+		}
+        $data['pics'] = $pics;
+        $data['title_tag'] = $title_tag;
         $data['part'] = $part;
         $data['all_content'] = $all_content;
 		$this->load->view('article',$data);
