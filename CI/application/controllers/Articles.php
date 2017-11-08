@@ -31,11 +31,16 @@ class Articles extends My_Controller {
         $product_id = trim($product_id,'.html');
         //	查找文章信息
 		$article = $this->article->get($product_id);
-		$pics = json_decode($article['arr_pic']);
-		foreach ($pics as $key => $pic)
-		{
-			$pics[$key] = $this->get_img_url($pic);
-		}
+        $pics = [];
+		if (!empty($article['arr_pic']))
+        {
+            $pics = json_decode($article['arr_pic']);
+            foreach ($pics as $key => $pic)
+            {
+                $pics[$key] = $this->get_img_url($pic);
+            }
+        }
+
 
         $where['where'][] = "state = 1 and pid = ".$product_id;
         $where['order_by'][] = "id asc";
