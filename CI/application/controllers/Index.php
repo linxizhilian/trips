@@ -64,6 +64,19 @@ class Index extends My_Controller {
 		$tmp = array_merge($lunbo,$tmp,$tuijian);
 		$article = $this->get_article_by_aids($tmp);
 
+		//	底部数据
+		$where['where'] = "id = 6";
+		$other = $this->other->get_list();
+		$index_bootm = '';
+		foreach ($other as $item)
+		{
+			if ($item['id'] == 8)
+			{
+				$index_bootm = $item;
+			}
+		}
+
+		$data['index_bootm'] = $index_bootm;
 		$data['article'] = $article;
 		$data['all_category'] = $all_category;
 //        get_list_by_pid

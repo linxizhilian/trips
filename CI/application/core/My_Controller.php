@@ -51,7 +51,7 @@ class My_Controller extends CI_Controller {
 	}
 
 	//	处理图片地址
-	public function get_img_url($md5, $height = 'h_240', $width = 'w_360', $ext = 'jpg', $thumberConf = 'lis', $domain = 'img.jttup.com')
+	public function get_img_url($md5, $height = 'h_240', $width = 'w_360', $ext = 'jpg', $thumberConf = 'f', $domain = 'img.pangzer.com')
 	{
 		if (empty($md5))
 		{
@@ -73,7 +73,7 @@ class My_Controller extends CI_Controller {
 			$p = pathinfo($url);
 			$dirname = isset($p['dirname']) ? $p['dirname'] : "";
 			$url = $dirname . '/' . $p['filename'];
-			$url = 'http://' . $domain . '/thumb/' . $thumberConf . '' . $url . ',c_fill,';
+			$url = 'http://' . $domain . '/thumb/' . $thumberConf  . $url . ',c_fill,';
 		}
 		return $url;
 	}

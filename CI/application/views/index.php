@@ -216,6 +216,15 @@ $this->load->view('header');
                     </div>
                 </div>
             </div>
+
+<!--			杂项 下面添加-->
+			<div class="row masonry-container container-fluid">
+
+				<div>
+					<?php echo $index_bootm['value'];?>
+				</div>
+
+			</div>
         </div>
     </div>
 </div>
