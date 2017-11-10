@@ -30,20 +30,7 @@ class Index extends My_Controller {
         $tmpp = [];
         foreach ($all_category as $key => $value)
         {
-			$where = [];
-			$tmmm = [];
-			$where['fields'] = 'id';
-            $where['where'][] = "categoryid = ". $value['id'];
-            $where['order_by'] = 'id';
-			$where['limit'] = array(10);
-            $ss = $this->article->get_list($where);
-            foreach ($ss as $v)
-			{
-				$tmmm[] = $v['id'];
-			}
-            $value['aids'] = $tmmm;
             $tmpp[$value['id']] = $value;
-
         }
         $all_category = $tmpp;
         $tmp = [];
@@ -51,18 +38,30 @@ class Index extends My_Controller {
 		{
 			if (!empty($item['aids']))
 			{
-				$tmp = array_merge($item['aids'],$tmp);
+				$tmp = array_merge(explode(',',$item['aids']),$tmp);
 			}
 		}
         //	首屏轮播数据
-		$lunbo = [1,1,1];
+		$lunbo = explode(',',$all_category[11]['aids']);
 		$data['lunbo'] = $lunbo;
 		//	今日推荐
-		$tuijian = [1,1,1,1];
+		$tuijian = explode(',',$all_category[1]['aids']);
 		$data['tuijian'] = $tuijian;
         //	通过id 查找文章数据
-		$tmp = array_merge($lunbo,$tmp,$tuijian);
-		$article = $this->get_article_by_aids($tmp);
+		if (!empty($tuijian))
+		{
+			$tmp1 = array_merge($lunbo,$tmp,$tuijian);
+		}else{
+			$tmp1 = array_merge($lunbo,$tmp);
+		}
+		foreach ($tmp1 as $key => $item)
+		{
+			if (empty($item))
+			{
+				unset($tmp1[$key]);
+			}
+		}
+		$article = $this->get_article_by_aids($tmp1);
 
 		//	底部数据
 		$where['where'] = "id = 6";
