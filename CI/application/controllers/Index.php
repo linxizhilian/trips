@@ -55,10 +55,10 @@ class Index extends My_Controller {
 			}
 		}
         //	首屏轮播数据
-		$lunbo = [53,78,44];
+		$lunbo = [1,1,1];
 		$data['lunbo'] = $lunbo;
 		//	今日推荐
-		$tuijian = [55,33,22,66];
+		$tuijian = [1,1,1,1];
 		$data['tuijian'] = $tuijian;
         //	通过id 查找文章数据
 		$tmp = array_merge($lunbo,$tmp,$tuijian);

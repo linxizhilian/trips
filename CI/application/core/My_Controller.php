@@ -73,6 +73,7 @@ class My_Controller extends CI_Controller {
 			$p = pathinfo($url);
 			$dirname = isset($p['dirname']) ? $p['dirname'] : "";
 			$url = $dirname . '/' . $p['filename'];
+			$url = ltrim($url,'.');
 			$url = 'http://' . $domain . '/thumb/' . $thumberConf  . $url . ',c_fill,';
 		}
 		return $url;
