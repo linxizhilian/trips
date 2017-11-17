@@ -56,7 +56,7 @@ $this->load->view('header');
             <!--content start-->
             <div>
 				<pre>
-					<?php echo $title_tag['content'];?>
+					<?php echo empty($title_tag['content']) ? '': $title_tag['content'];?>
 				</pre>
             </div>
 
@@ -64,10 +64,14 @@ $this->load->view('header');
             <div class="baike clear">
                 <div class="common col-md-9 col-sm-9" style="color: #0B90C4;float: right;">
 
+
+					<?php if (!empty($all_content)): ?>
+
                     <?php foreach ($all_content as $key => $value):?>
 
                         <div class="animal">
-                            <h2><?php echo $part[$value['typeid']]['part'] ;?></h2>
+
+                            <h2><?php echo empty($part[$value['typeid']]['part'])? '' : $part[$value['typeid']]['part'];?></h2>
 
                             <div style="height:600px;">
                                 <?=$value['content']?>
@@ -76,19 +80,21 @@ $this->load->view('header');
                         </div>
 
                     <?php endforeach; ?>
+					<?php endif;?>
                 </div>
 
 
                 <!--fix   start-->
                 <div class="article-nav-bar fix col-md-2 col-sm-2" style="color: #1f8c22;" id="fix" >
                     <ul>
+						<?php if (!empty($all_content)): ?>
                         <?php foreach ($all_content as $key => $value):?>
 							<?php
 							?>
 
-                        <li class="bg<?=$key?>" style="height: 50px;background-color: #0bcb9a;margin-bottom: 2px;"><?php echo $part[$value['typeid']]['part'] ;?></li>
+                        <li class="bg<?=$key?>" style="height: 50px;background-color: #0bcb9a;margin-bottom: 2px;"><?php echo empty($part[$value['typeid']]['part']) ? '' : $part[$value['typeid']]['part'] ;?></li>
                         <?php endforeach; ?>
-
+						<?php endif;?>
                     </ul>
                 </div>
                 <!--fix   end-->

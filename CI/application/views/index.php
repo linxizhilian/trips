@@ -221,7 +221,7 @@ $this->load->view('header');
 			<div class="row masonry-container container-fluid">
 
 				<div>
-					<?php echo $index_bootm['value'];?>
+					<?php echo empty($index_bootm['value']) ?  '暂无数据' : $index_bootm['value'];?>
 				</div>
 
 			</div>

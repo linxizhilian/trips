@@ -1,13 +1,14 @@
 <style>
 	.footer	{margin: auto;}
 	.footer { width:100%; height:120px; background:#2c3a46; }
+	.footer { bottom: 0px; }
 	.footer .l img { margin-top:30px; }
 	.footer .r { margin-left:75px; }
 	.footer .r .link { height:32px; line-height:32px; margin-top:28px; }
 	.footer .r .link a { font-size:14px; color:#fff; margin-right:43px; }
 	.footer .r .p { line-height:32px; font-size:14px; color:#999; }
 </style>
-<div class="sub-footer">
+<div class="sub-footer" style="">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
