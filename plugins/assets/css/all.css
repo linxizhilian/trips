@@ -763,9 +763,7 @@ body .navbar .navbar-header {
   background-color: #fff;
 }
 .sub-footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+
   background-color: #020202;
   padding: 40px 0;
 }
