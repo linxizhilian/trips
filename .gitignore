@@ -1,4 +1,7 @@
 CI/appadmin/config/database.php
 CI/application/config/database.php
 .idea/
+.htaccess/
+index.php/
+plugins/node_modules
 #README.md
