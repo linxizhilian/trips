@@ -4,4 +4,5 @@ CI/application/config/database.php
 .htaccess/
 index.php/
 plugins/node_modules
+plugins/dist
 #README.md

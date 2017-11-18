@@ -1,7 +1,7 @@
 <?php
 $this->load->view('header');
 ?>
-<body id="index2" class="main-container">
+<body id="index" class="main-container">
 <div class="row masonry-container  container-fluid">
     <div class="row-fluid">
         <div class="span12">

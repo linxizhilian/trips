@@ -126,9 +126,10 @@ gulp.task('revHtmlJs', function () {
 
 
 // 默认任务
-gulp.task('default', ['less2css'], function() {
-	gulp.run('css');
-});
+gulp.task('default', ['watch']);
+// gulp.task('default', ['less2css'], function() {
+// 	gulp.run('css');
+// });
 
 // 生产构建 TODO
 gulp.task('build', function(done) {
