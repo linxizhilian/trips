@@ -199,7 +199,6 @@ $this->load->view('header');
 
 			<!--			杂项 下面添加-->
 			<div class="row masonry-container container-fluid">
-
 				<div>
 					<?php echo empty($index_bootm['value']) ?  '暂无数据' : $index_bootm['value'];?>
 				</div>
