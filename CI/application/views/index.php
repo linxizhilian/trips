@@ -79,6 +79,7 @@ $this->load->view('header');
 									{
 										continue;
 									}
+
 								?>
                             <div class="col-md-6 col-sm-6  thumbnail">
                                 <a target="_blank" href="<?php echo $article[$aid]['article_url']?>">
