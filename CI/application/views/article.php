@@ -6,7 +6,7 @@ $this->load->view('header');
 <!--<link href="http://s.lelezone.com/baike/css/content.css?v=20170102" rel="stylesheet" type="text/css"/>-->
 
 <body id="index" class="main-container">
-<div class="row masonry-container  container-fluid">
+<div class="row masonry-container">
     <div class="row-fluid">
         <div class="span12">
 					<?php
