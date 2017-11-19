@@ -6,11 +6,13 @@
 @import '_keyframes.less';
 
 html {
-	overflow: hidden;
 	width: 100%;
 	height: 100%;
 }
-
+ul,ol,li {
+	list-style: none;
+	list-style-position: outside
+}
 body {
 	font-family: @fontFamily;
 	overflow-x: hidden;
@@ -512,4 +514,12 @@ button.close > span,
 button > .glyphicon,
 button > .caret .sort-default {
 	.transition(all .25s);
+}
+
+
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
 }
