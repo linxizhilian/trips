@@ -58,7 +58,7 @@ $(function () {
 
 //加载完成的数据
       function aqiLoad() {
-        console.log('aqiLoad = ',)
+        console.log('aqiLoad = ')
         var tagName = $('.common > .animal');
         var scrolltop = getScrollTop();
         var arr = [];

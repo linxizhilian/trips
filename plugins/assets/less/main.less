@@ -20,6 +20,13 @@ body {
   height: 127px;
   margin-bottom: 0.5em;
 
+  .menu-group {
+    position: absolute;
+    font-size: 3rem;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
   .header-logo {
     top: 50%;
@@ -48,6 +55,8 @@ body {
     line-height: 20px;
     text-align: right;
   }
+
+
   .header-linkbin {
     max-width: 700px;
     margin: 0.7em auto 0 auto;
@@ -193,11 +202,11 @@ body {
   }
   @media screen and (max-width: 1200px) {
     #carousel-example-generic {
-      max-width: 90%;
+      // max-width: 90%;
       height: 500px;
     }
     .masonry-container {
-      max-width: 90%;
+      // max-width: 90%;
     }
   }
   @media screen and (max-width: 750px) {
@@ -303,9 +312,98 @@ body {
     }
   }
 }
+
+
+.menu-group-content {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 100%;
+  z-index: 99;
+  transition: left .3s;
+  background-color: #fff;
+  &.view-menu {
+    left: 0 !important;
+    .menu-group-content-header {
+      .menu-content-close {
+        right: 1rem;
+
+      }
+    }
+  }
+  .menu-group-content-header {
+    position: relative;
+    .menu-content-close {
+      position: absolute;
+      top: 1rem;
+      right: -1rem;
+    }
+  }
+
+}
+
+.menu-slider-list {
+  font-size: 14px;
+  font-weight: 200;
+  padding: 4rem 1rem 1rem;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 10px;
+  li {
+    font-size: 1.8em;
+    line-height: 1.6em;
+    font-weight: 400;
+    color: inherit;
+    a {
+      display: block;
+      text-decoration: none;
+      background-color: transparent;
+      color: inherit;
+      &:hover {
+        color: #ff8100;
+      }
+      &:focus {
+        outline: thin dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+      }
+    }
+  }
+  .menu-contact-us {
+    margin-top: 30px;
+    p {
+      margin: 10px 0;
+      line-height: 1.5;
+    }
+  }
+}
+
 @media (min-width: 1200px) {
   .sub-footer .container {
     width: 1170px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  // header 导航页
+  #homepage-header {
+    .header-center, .header-contact {
+      display: block !important;
+    }
+    .menu-group {
+      display: none !important;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  // header 导航页
+  #homepage-header {
+    .header-center, .header-contact {
+      display: none !important;
+    }
+    .menu-group {
+      display: block !important;
+    }
   }
 }
 @media (min-width: 992px) {

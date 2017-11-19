@@ -44,11 +44,12 @@ li {
   list-style-position: outside;
 }
 body {
-  font-family: '微软雅黑';
+  font-family: "Calibre", "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow-x: hidden;
   overflow-y: auto;
   width: 100%;
   min-width: 0;
+  color: #666;
 }
 body.iframe {
   padding-top: 0;
@@ -561,6 +562,13 @@ body .navbar .navbar-header {
   height: 127px;
   margin-bottom: 0.5em;
 }
+#homepage-header .menu-group {
+  position: absolute;
+  font-size: 3rem;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
 #homepage-header .header-logo {
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -725,11 +733,7 @@ body .navbar .navbar-header {
 }
 @media screen and (max-width: 1200px) {
   #index #carousel-example-generic {
-    max-width: 90%;
     height: 500px;
-  }
-  #index .masonry-container {
-    max-width: 90%;
   }
 }
 @media screen and (max-width: 750px) {
@@ -830,9 +834,86 @@ body .navbar .navbar-header {
 .sub-footer .container p.copy-box {
   font-size: 12px;
 }
+.menu-group-content {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 100%;
+  z-index: 99;
+  transition: left .3s;
+  background-color: #fff;
+}
+.menu-group-content.view-menu {
+  left: 0 !important;
+}
+.menu-group-content.view-menu .menu-group-content-header .menu-content-close {
+  right: 1rem;
+}
+.menu-group-content .menu-group-content-header {
+  position: relative;
+}
+.menu-group-content .menu-group-content-header .menu-content-close {
+  position: absolute;
+  top: 1rem;
+  right: -1rem;
+}
+.menu-slider-list {
+  font-size: 14px;
+  font-weight: 200;
+  padding: 4rem 1rem 1rem;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.menu-slider-list li {
+  font-size: 1.8em;
+  line-height: 1.6em;
+  font-weight: 400;
+  color: inherit;
+}
+.menu-slider-list li a {
+  display: block;
+  text-decoration: none;
+  background-color: transparent;
+  color: inherit;
+}
+.menu-slider-list li a:hover {
+  color: #ff8100;
+}
+.menu-slider-list li a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.menu-slider-list .menu-contact-us {
+  margin-top: 30px;
+}
+.menu-slider-list .menu-contact-us p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
 @media (min-width: 1200px) {
   .sub-footer .container {
     width: 1170px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #homepage-header .header-center,
+  #homepage-header .header-contact {
+    display: block !important;
+  }
+  #homepage-header .menu-group {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #homepage-header .header-center,
+  #homepage-header .header-contact {
+    display: none !important;
+  }
+  #homepage-header .menu-group {
+    display: block !important;
   }
 }
 @media (min-width: 992px) {

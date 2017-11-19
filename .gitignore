@@ -5,4 +5,5 @@ CI/application/config/database.php
 index.php/
 plugins/node_modules
 plugins/dist
+qqplugins\assets\css
 #README.md

@@ -58,7 +58,7 @@ $(function () {
 
 //加载完成的数据
       function aqiLoad() {
-        console.log('aqiLoad = ',)
+        console.log('aqiLoad = ')
         var tagName = $('.common > .animal');
         var scrolltop = getScrollTop();
         var arr = [];
@@ -81,8 +81,8 @@ $(function () {
 
       // 定位  dom
       function initPositionAqiDom() {
-        let windowScroll = getScrollTop();
-        let pos = getPos(document.getElementsByClassName('baike')[0]).top
+        var windowScroll = getScrollTop();
+        var pos = getPos(document.getElementsByClassName('baike')[0]).top
         if(windowScroll >= pos) {
           document.getElementById('fix').style.top = 0 + 'px'
         }
@@ -479,6 +479,9 @@ function getPos(obj) {
 };
 function addClass(obj, className) {
   //分为俩种情况  一种就是如果它本身没有class的时候 和它本身有class的时候
+  if(!obj) { // 非空判断，否则undefined
+    return
+  }
   if (obj.className == '') {
     obj.className = className;
   } else {
