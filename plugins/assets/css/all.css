@@ -559,7 +559,7 @@ body .navbar .navbar-header {
   z-index: 2;
   font-weight: 200;
   position: relative;
-  height: 127px;
+  height: 80px;
   margin-bottom: 0.5em;
 }
 #homepage-header .menu-group {
@@ -587,12 +587,16 @@ body .navbar .navbar-header {
   transform: translateY(-50%);
 }
 #homepage-header .header-contact {
-  color: #999;
   position: absolute;
-  top: 2rem;
-  right: 1rem;
+  right: 0;
+  top: 50%;
   line-height: 20px;
   text-align: right;
+  transform: translateY(-50%);
+  color: #999;
+}
+#homepage-header .header-contact p {
+  margin: 0;
 }
 #homepage-header .header-linkbin {
   max-width: 700px;
@@ -775,7 +779,7 @@ body .navbar .navbar-header {
   position: relative;
   width: 100%;
   text-align: center;
-  margin: 40px 0 10px;
+  margin: 20px 0 10px;
   box-shadow: 5px 5px 10px #d2d2d2;
 }
 .header-list a {

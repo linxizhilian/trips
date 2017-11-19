@@ -9,9 +9,9 @@ $this->load->view('header');
 <div class="row masonry-container  container-fluid">
     <div class="row-fluid">
         <div class="span12">
-                <?php
-                $this->load->view('nav');
-                ?>
+					<?php
+					$this->load->view('nav');
+					?>
 
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
