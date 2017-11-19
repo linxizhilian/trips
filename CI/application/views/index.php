@@ -78,13 +78,15 @@ $this->load->view('header');
 									continue;
 								}
 								?>
-								<div class="col-md-6 col-sm-6  thumbnail">
-									<a target="_blank" href="<?php echo $article[$aid]['article_url']?>">
-										<img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['instruction']?>">
-										<div class="caption">
-											<p><?php echo $article[$aid]['instruction']?></p>
-										</div>
-									</a>
+								<div class="col-md-6 col-sm-6">
+									<div class="thumbnail">
+										<a target="_blank" href="<?php echo $article[$aid]['article_url']?>">
+											<img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['instruction']?>">
+											<div class="caption">
+												<p><?php echo $article[$aid]['instruction']?></p>
+											</div>
+										</a>
+									</div>
 								</div>
 							<?php endforeach; ?>
 							<?php
@@ -125,14 +127,16 @@ $this->load->view('header');
 									continue;
 								}
 								?>
+								<div class="col-md-<?php echo ($key == 1) ? 'col-md-4 col-sm-4 ': 'col-md-8 col-sm-8 ' ?>">
+									<div class="thumbnail">
+										<a target="_blank" href="<?php echo $article[$aid]['article_url']?>">
+											<img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['instruction']?>" />
+											<div class="caption">
+												<p><?php echo $article[$aid]['instruction']?></p>
+											</div>
+										</a>
+									</div>
 
-								<div class="col-md-<?php echo ($key == 1) ? 'col-md-4 col-sm-4 ': 'col-md-8 col-sm-8 ' ?> thumbnail">
-									<a target="_blank" href="<?php echo $article[$aid]['article_url']?>">
-										<img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['instruction']?>" />
-										<div class="caption">
-											<p><?php echo $article[$aid]['instruction']?></p>
-										</div>
-									</a>
 								</div>
 							<?php endforeach; ?>
 
@@ -153,14 +157,16 @@ $this->load->view('header');
 								continue;
 							}
 							?>
+							<div class="col-md-<?php echo ($key != 1) ? 'col-md-4 col-sm-4 ': 'col-md-8 col-sm-8 ' ?>">
+								<div class="thumbnail">
+									<a target="_blank" href="<?php echo $article[$aid]['article_url']?>">
+										<img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['instruction']?>" />
+										<div class="caption">
+											<p><?php echo $article[$aid]['instruction']?></p>
+										</div>
+									</a>
+								</div>
 
-							<div class="col-md-<?php echo ($key != 1) ? 'col-md-4 col-sm-4 ': 'col-md-8 col-sm-8 ' ?> thumbnail">
-								<a target="_blank" href="<?php echo $article[$aid]['article_url']?>">
-									<img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['instruction']?>" />
-									<div class="caption">
-										<p><?php echo $article[$aid]['instruction']?></p>
-									</div>
-								</a>
 							</div>
 						<?php endforeach; ?>
 					</div>
@@ -183,13 +189,17 @@ $this->load->view('header');
 								}
 								?>
 
-								<div class="col-md-<?php echo ($key != 1) ? 'col-md-4 col-sm-4 ': 'col-md-8 col-sm-8 ' ?> thumbnail">
-									<a target="_blank" href="<?php echo $article[$aid]['article_url']?>">
-										<img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['instruction']?>" />
-										<div class="caption">
-											<p><?php echo $article[$aid]['instruction']?></p>
-										</div>
-									</a>
+								<div class="col-md-<?php echo ($key != 1) ? 'col-md-4 col-sm-4 ': 'col-md-8 col-sm-8 ' ?>">
+
+									<div class="thumbnail">
+										<a target="_blank" href="<?php echo $article[$aid]['article_url']?>">
+											<img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['instruction']?>" />
+											<div class="caption">
+												<p><?php echo $article[$aid]['instruction']?></p>
+											</div>
+										</a>
+									</div>
+
 								</div>
 							<?php endforeach; ?>
 						</div>
