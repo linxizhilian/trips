@@ -1,12 +1,43 @@
 <style>
-	.footer	{margin: auto;}
-	.footer { width:100%; height:120px; background:#2c3a46; }
-	.footer { bottom: 0px; }
-	.footer .l img { margin-top:30px; }
-	.footer .r { margin-left:75px; }
-	.footer .r .link { height:32px; line-height:32px; margin-top:28px; }
-	.footer .r .link a { font-size:14px; color:#fff; margin-right:43px; }
-	.footer .r .p { line-height:32px; font-size:14px; color:#999; }
+	.footer {
+		margin: auto;
+	}
+
+	.footer {
+		width: 100%;
+		height: 120px;
+		background: #2c3a46;
+	}
+
+	.footer {
+		bottom: 0px;
+	}
+
+	.footer .l img {
+		margin-top: 30px;
+	}
+
+	.footer .r {
+		margin-left: 75px;
+	}
+
+	.footer .r .link {
+		height: 32px;
+		line-height: 32px;
+		margin-top: 28px;
+	}
+
+	.footer .r .link a {
+		font-size: 14px;
+		color: #fff;
+		margin-right: 43px;
+	}
+
+	.footer .r .p {
+		line-height: 32px;
+		font-size: 14px;
+		color: #999;
+	}
 </style>
 <div class="sub-footer" style="">
 	<div class="container">
@@ -29,12 +60,31 @@
 	</div>
 </div>
 <!--link-js-->
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
+				integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+				crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+				integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+				crossorigin="anonymous"></script>
 <script src="http://s.lelezone.com/baike/js/jquery-1.7.2.min.js" type="text/javascript"></script>
 <script src="/plugins/assets/js/js.js?v=1213" type="text/javascript"></script>
 
-<script >
+<script>
+
+	$(document).ready(function () {
+		// 初始化
+		// list 打开
+		console.log(' ready ')
+		$('.menu-group-btn').on('click', function () {
+			$('.menu-group-content').toggleClass('view-menu')
+
+		})
+		// list 关闭
+		$('.menu-content-close').on('click', function () {
+
+			$('.menu-group-content').toggleClass('view-menu')
+		})
+	});
 
 	//根据图片样式的宽高动态加载图片地址
 	function checkShow() {//检查元素是否在可视范围内
@@ -68,6 +118,8 @@
 			checkShow();
 		});
 	});
+
+
 </script>
 </body>
 </html>
