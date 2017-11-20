@@ -73,19 +73,18 @@
 
 	$(document).ready(function () {
 		// 初始化
-		// list 打开
-		console.log(' ready ')
-		$('.menu-group-btn').on('click', function () {
+		autoFixFooter()
+		$('.menu-group-btn').on('click', function () { // menu-list 打开
 			$('.menu-group-content').toggleClass('view-menu')
-
 		})
-		// list 关闭
-		$('.menu-content-close').on('click', function () {
 
+		$('.menu-content-close').on('click', function () { // menu-list 关闭
 			$('.menu-group-content').toggleClass('view-menu')
 		})
 	});
-
+	$(window).resize(function() {
+		autoFixFooter()
+	});
 	//根据图片样式的宽高动态加载图片地址
 	function checkShow() {//检查元素是否在可视范围内
 		var winH = $(window).height(),//获取窗口高度
@@ -119,6 +118,17 @@
 		});
 	});
 
+
+
+	function autoFixFooter() {
+		var winHeight = $(window).height();
+		var bodyHeight = $('body').height();
+		if(winHeight > bodyHeight) {
+			$('.sub-footer').addClass('fixed-bottom')
+		} else {
+			$('.sub-footer').removeClass('fixed-bottom')
+		}
+	}
 
 </script>
 </body>

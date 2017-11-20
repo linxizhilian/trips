@@ -633,11 +633,9 @@ body .navbar .navbar-header {
   z-index: 2;
 }
 #index {
-  height: inherit;
   font-family: '微软雅黑';
   overflow-x: hidden;
   overflow-y: scroll;
-  padding-bottom: 180px;
 }
 #index .sysTitle {
   text-align: center;
@@ -647,7 +645,7 @@ body .navbar .navbar-header {
 }
 #index #carousel-example-generic {
   margin: 0 auto;
-  height: 600px;
+  height: 400px;
 }
 #index #carousel-example-generic .carousel-inner {
   width: 100%;
@@ -659,7 +657,12 @@ body .navbar .navbar-header {
 }
 #index #carousel-example-generic .carousel-inner .item img {
   width: 100%;
-  height: inherit;
+  margin: auto !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
 }
 #index .masonry-container {
   margin: 0 auto;
@@ -743,7 +746,25 @@ body .navbar .navbar-header {
 @media screen and (max-width: 750px) {
   #index #carousel-example-generic {
     max-width: 700px;
-    height: 400px;
+    height: 300px;
+  }
+  #index .masonry-container {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  #index #carousel-example-generic {
+    max-width: 700px;
+    height: 250px;
+  }
+  #index .masonry-container {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #index #carousel-example-generic {
+    max-width: 700px;
+    height: 200px;
   }
   #index .masonry-container {
     max-width: 100%;
@@ -936,4 +957,10 @@ body .navbar .navbar-header {
 }
 #home-container h1 {
   margin: 10px;
+}
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
