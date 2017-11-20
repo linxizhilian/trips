@@ -41,15 +41,9 @@ $this->load->view('header');
 
             <!-- 面包屑 -->
             <ul class="breadcrumb">
-                <ol>
-                    <a href="#">主页</a> <span class="divider">/</span>
-                </ol>
-                <ol>
-                    <a href="#">类目</a> <span class="divider">/</span>
-                </ol>
-                <ol class="active">
-                    主题
-                </ol>
+                <li><a href="/Index/home">主页</a> <span class="divider"></span></li>
+                <li><a href="/Category/index">类目</a> <span class="divider"></span></li>
+                <li class="active">主题</li>
             </ul>
 
 
