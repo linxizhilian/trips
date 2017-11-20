@@ -47,7 +47,6 @@ $this->load->view('header');
             <ul class="breadcrumb">
 							<li><a href="/Index/home">主页</a> <span class="divider"></span></li>
 							<li><a href="/Category/index">类目</a> <span class="divider"></span></li>
-                <li class="active">主题</li>
             </ul>
 
             <!-- 文章类表 -->
