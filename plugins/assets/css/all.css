@@ -991,10 +991,17 @@ body .navbar .navbar-header {
   padding-left: 0;
 }
 .article-container .baike .article-nav-bar ul li {
-  height: 50px;
-  line-height: 50px;
-  background-color: #0bcb9a;
+  height: 44px;
+  line-height: 44px;
+  color: #fff;
   margin-bottom: 2px;
+  cursor: pointer;
+  background-color: #FFB974;
+  font-size: 16px;
+  font-weight: bold;
+}
+.article-container .baike .article-nav-bar ul li.active {
+  background-color: #FB8818;
 }
 .article-container .baike .common {
   position: relative;

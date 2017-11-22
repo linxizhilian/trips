@@ -12,7 +12,6 @@ $this->load->view('header');
 			<?php
 			$this->load->view('nav');
 			?>
-
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
 					<ol data-target="#carousel-example-generic" data-slide-to="0" class="active"></ol>
@@ -60,7 +59,7 @@ $this->load->view('header');
 					<div class="common">
 
 						<div class="animal">
-							<h2>路线</h2>
+							<h2>路线-样例</h2>
 							<p >路线路线路线路线路线路线路线路线路线路线路线路线路线
 								路线路线路线路线路线路线路线路线路线路线路线路线路线
 								路线路线路线路线路线路线路线路线路线路线路线路线路线
@@ -85,7 +84,7 @@ $this->load->view('header');
 
 						</div>
 						<div class="animal">
-							<h2>费用</h2>
+							<h2>费用-样例</h2>
 							<p >费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用
 								费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用
 								费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用费用
@@ -94,7 +93,7 @@ $this->load->view('header');
 						</div>
 
 						<div class="animal">
-							<h2>车系</h2>
+							<h2>车系-样例</h2>
 							<p >车系车系车系车系车系车系车系车系车系车系车系车系车系车系车系车系车系车系车系车系车系
 								车系车系车系车系车系车系车系车系车系车系车系车系车系车系车系车系车系车系车系车系车系
 								车系车系车系车系车系车系车系车系车系车系车系车系车系车系车系车系车系车系车系车系车系
@@ -123,9 +122,9 @@ $this->load->view('header');
 					<!--fix   start-->
 					<div class="article-nav-bar" id="fix">
 						<ul>
-							<li class="router bg_1_1">路线</li>
-							<li class="router bg_1_2">费用</li>
-							<li class="router bg_1_3">车系</li>
+							<li class="router">路线-样例</li>
+							<li class="router">费用-样例</li>
+							<li class="router">车系-样例</li>
 							<?php if (!empty($all_content)): ?>
 								<?php foreach ($all_content as $key => $value): ?>
 									<?php
