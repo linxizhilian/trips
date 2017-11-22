@@ -203,11 +203,9 @@ body {
   }
   @media screen and (max-width: 1200px) {
     #carousel-example-generic {
-      // max-width: 90%;
       height: 500px;
     }
     .masonry-container {
-      // max-width: 90%;
     }
   }
   @media screen and (max-width: 750px) {
@@ -217,6 +215,18 @@ body {
     }
     .masonry-container {
       max-width: 100%;
+    }
+    // 详情页
+    .article-container {
+      background-color: red;
+      .baike {
+        .article-nav-bar {
+          width: 0 !important;
+        }
+        .common {
+          padding-left: 10px !important;
+        }
+      }
     }
   }
   @media screen and (max-width: 650px) {
@@ -452,6 +462,18 @@ body {
 
 // 文章详情
 .article-container {
+
+  @media screen and (max-width: 750px) {
+    // 详情页
+    .baike {
+      .article-nav-bar {
+        width: 0 !important;
+      }
+      .common {
+        padding-left: 10px !important;
+      }
+    }
+  }
   .baike {
     width: 100%;
     position: relative;
@@ -461,6 +483,9 @@ body {
       display: block;
       clear: both;
     }
+
+
+
     .article-nav-bar {
       position: fixed;
       width: 200px;

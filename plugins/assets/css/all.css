@@ -759,6 +759,15 @@ body .navbar .navbar-header {
   #index .masonry-container {
     max-width: 100%;
   }
+  #index .article-container {
+    background-color: red;
+  }
+  #index .article-container .baike .article-nav-bar {
+    width: 0 !important;
+  }
+  #index .article-container .baike .common {
+    padding-left: 10px !important;
+  }
 }
 @media screen and (max-width: 650px) {
   #index #carousel-example-generic {
@@ -971,6 +980,14 @@ body .navbar .navbar-header {
   bottom: 0;
   right: 0;
   left: 0;
+}
+@media screen and (max-width: 750px) {
+  .article-container .baike .article-nav-bar {
+    width: 0 !important;
+  }
+  .article-container .baike .common {
+    padding-left: 10px !important;
+  }
 }
 .article-container .baike {
   width: 100%;
