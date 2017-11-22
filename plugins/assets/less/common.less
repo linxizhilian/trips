@@ -524,3 +524,12 @@ button > .caret .sort-default {
 .fr {
 	float: right;
 }
+
+.clear {
+	zoom: 1;
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}

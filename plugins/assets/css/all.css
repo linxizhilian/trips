@@ -515,6 +515,14 @@ button > .caret .sort-default {
 .fr {
   float: right;
 }
+.clear {
+  zoom: 1;
+}
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
 /**
   * 页面样式
@@ -963,4 +971,51 @@ body .navbar .navbar-header {
   bottom: 0;
   right: 0;
   left: 0;
+}
+.article-container .baike {
+  width: 100%;
+  position: relative;
+  margin: 10px 0;
+}
+.article-container .baike.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.article-container .baike .article-nav-bar {
+  position: fixed;
+  width: 200px;
+  color: #1f8c22;
+}
+.article-container .baike .article-nav-bar ul {
+  padding-left: 0;
+}
+.article-container .baike .article-nav-bar ul li {
+  height: 50px;
+  line-height: 50px;
+  background-color: #0bcb9a;
+  margin-bottom: 2px;
+}
+.article-container .baike .common {
+  position: relative;
+  color: #0B90C4;
+  text-align: left;
+  padding: 10px 10px 10px 210px;
+}
+.article-container .baike .common .animal {
+  margin-bottom: 30px;
+  border: solid 1px #eee;
+}
+.article-container .baike .common .animal h2 {
+  height: 50px;
+  line-height: 50px;
+  background: #F9F0E6;
+  text-indent: 10px;
+  font-size: 20px;
+  color: #000;
+}
+.article-container .baike .common .animal > p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
 }

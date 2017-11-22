@@ -119,7 +119,9 @@
 	});
 
 
-
+	/**
+	 * footer 贴底
+	 */
 	function autoFixFooter() {
 		var winHeight = $(window).height();
 		var bodyHeight = $('body').height();
