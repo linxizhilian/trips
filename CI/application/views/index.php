@@ -19,7 +19,7 @@ $this->load->view('header');
 					<?php foreach ($lunbo as $key => $aid):?>
 						<div class="item <?php if ($key == 0) echo "active";?>">
 							<a target="_blank" href="<?php echo $article[$aid]['article_url']?>">
-								<img  class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['instruction']?>">
+								<img  class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>">
 <!--								<div class="carousel-caption">-->
 <!--									--><?php //echo $key?>
 <!--								</div>-->
