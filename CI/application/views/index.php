@@ -176,40 +176,40 @@ $this->load->view('header');
 			</div>
 
 
-			<div class="row masonry-container container-fluid">
-				<div class="row-fluid">
-					<div class="span12">
-						<div class="page-header">
-							<h1>Driver</h1>
-						</div>
-						<div class="container-fluid">
-							<div class="row-fluid">
-								<?php foreach ($all_category[5]['aids'] as $key => $aid):?>
-									<?php
-									if ($key >1)
-									{
-										continue;
-									}
-									?>
-
-									<div class="col-md-<?php echo ($key != 1) ? 'col-md-4 col-sm-4 ': 'col-md-8 col-sm-8 ' ?> thumbnail">
-										<a target="_blank" href="<?php echo $article[$aid]['article_url']?>">
-											<img class="lazy_src" img_src="<?php echo $article[$aid]['img_url']?>" alt="<?php echo $article[$aid]['instruction']?>" />
-											<div class="caption">
-												<p><?php echo $article[$aid]['instruction']?></p>
-											</div>
-										</a>
-									</div>
-								<?php endforeach; ?>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
+<!--			<div class="row masonry-container container-fluid">-->
+<!--				<div class="row-fluid">-->
+<!--					<div class="span12">-->
+<!--						<div class="page-header">-->
+<!--							<h1>Driver</h1>-->
+<!--						</div>-->
+<!--						<div class="container-fluid">-->
+<!--							<div class="row-fluid">-->
+<!--								--><?php //foreach ($all_category[5]['aids'] as $key => $aid):?>
+<!--									--><?php
+//									if ($key >1)
+//									{
+//										continue;
+//									}
+//									?>
+<!---->
+<!--									<div class="col-md---><?php //echo ($key != 1) ? 'col-md-4 col-sm-4 ': 'col-md-8 col-sm-8 ' ?><!-- thumbnail">-->
+<!--										<a target="_blank" href="--><?php //echo $article[$aid]['article_url']?><!--">-->
+<!--											<img class="lazy_src" img_src="--><?php //echo $article[$aid]['img_url']?><!--" alt="--><?php //echo $article[$aid]['instruction']?><!--" />-->
+<!--											<div class="caption">-->
+<!--												<p>--><?php //echo $article[$aid]['instruction']?><!--</p>-->
+<!--											</div>-->
+<!--										</a>-->
+<!--									</div>-->
+<!--								--><?php //endforeach; ?>
+<!--							</div>-->
+<!--						</div>-->
+<!---->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
 			<!--			杂项 下面添加-->
-			<div class="row masonry-container container-fluid">
-				<div>
+			<div class="row masonry-container container-fluid  trips-index-bottom">
+				<div >
 					<?php echo empty($index_bootm['value']) ?  '暂无数据' : $index_bootm['value'];?>
 				</div>
 
