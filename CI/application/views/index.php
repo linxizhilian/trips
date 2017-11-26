@@ -68,7 +68,7 @@ $this->load->view('header');
 				<div class="row-fluid">
 					<div class="col-md-8 col-sm-8">
 						<div class="row-fluid">
-							<?php foreach ($all_category[2]['aids'] as $key => $aid):?>
+							<?php foreach ($all_category[4]['aids'] as $key => $aid):?>
 								<?php
 								if ($key >3)
 								{
