@@ -1047,7 +1047,9 @@ body .navbar .navbar-header {
   margin: 20px 0 !important;
   background-color: #e6e6e6;
 }
-
-.page-header {
-  margin-top: 20px;
+img {
+  transition: all 1s;
+}
+img.hover {
+  transform: scale(1.2, 1.2);
 }

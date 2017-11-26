@@ -81,6 +81,16 @@
 		$('.menu-content-close').on('click', function () { // menu-list 关闭
 			$('.menu-group-content').toggleClass('view-menu')
 		})
+
+		// img 图片hover 事件
+
+		$('img').on('mouseenter', function(e) {
+			$(this).addClass('hover')
+		})
+		$('img').on('mouseout', function(e) {
+			$(this).removeClass('hover')
+		})
+
 	});
 	$(window).resize(function() {
 		autoFixFooter()
@@ -131,6 +141,8 @@
 			$('.sub-footer').removeClass('fixed-bottom')
 		}
 	}
+
+
 
 </script>
 </body>
