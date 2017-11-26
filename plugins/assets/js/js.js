@@ -122,7 +122,7 @@ $(function () {
 //初始化
       function init() {
         //给Li绑定函数
-        var oLi = oFix.getElementsByTagName('li');
+        var oLi = oFix.getElementsByClassName('router');
         for (var i = 0; i < oLi.length; i++) {
           oLi[i].index = i;
           band(oLi[i], 'click', aqiClick)
@@ -479,9 +479,6 @@ function getPos(obj) {
 };
 function addClass(obj, className) {
   //分为俩种情况  一种就是如果它本身没有class的时候 和它本身有class的时候
-  if(!obj) { // 非空判断，否则undefined
-    return
-  }
   if (obj.className == '') {
     obj.className = className;
   } else {

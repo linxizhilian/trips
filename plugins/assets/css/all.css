@@ -515,6 +515,14 @@ button > .caret .sort-default {
 .fr {
   float: right;
 }
+.clear {
+  zoom: 1;
+}
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
 /**
   * 页面样式
@@ -751,6 +759,15 @@ body .navbar .navbar-header {
   #index .masonry-container {
     max-width: 100%;
   }
+  #index .article-container {
+    background-color: red;
+  }
+  #index .article-container .baike .article-nav-bar {
+    width: 0 !important;
+  }
+  #index .article-container .baike .common {
+    padding-left: 10px !important;
+  }
 }
 @media screen and (max-width: 650px) {
   #index #carousel-example-generic {
@@ -963,4 +980,66 @@ body .navbar .navbar-header {
   bottom: 0;
   right: 0;
   left: 0;
+}
+@media screen and (max-width: 750px) {
+  .article-container .baike .article-nav-bar {
+    width: 0 !important;
+  }
+  .article-container .baike .common {
+    padding-left: 10px !important;
+  }
+}
+.article-container .baike {
+  width: 100%;
+  position: relative;
+  margin: 10px 0;
+}
+.article-container .baike.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.article-container .baike .article-nav-bar {
+  position: fixed;
+  width: 200px;
+  color: #1f8c22;
+}
+.article-container .baike .article-nav-bar ul {
+  padding-left: 0;
+}
+.article-container .baike .article-nav-bar ul li {
+  height: 44px;
+  line-height: 44px;
+  color: #fff;
+  margin-bottom: 2px;
+  cursor: pointer;
+  background-color: #FFB974;
+  font-size: 16px;
+  font-weight: bold;
+}
+.article-container .baike .article-nav-bar ul li.active {
+  background-color: #FB8818;
+}
+.article-container .baike .common {
+  position: relative;
+  color: #0B90C4;
+  text-align: left;
+  padding: 10px 10px 10px 210px;
+}
+.article-container .baike .common .animal {
+  margin-bottom: 30px;
+  border: solid 1px #eee;
+}
+.article-container .baike .common .animal h2 {
+  height: 50px;
+  line-height: 50px;
+  background: #F9F0E6;
+  text-indent: 10px;
+  font-size: 20px;
+  color: #000;
+}
+.article-container .baike .common .animal > p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
 }
