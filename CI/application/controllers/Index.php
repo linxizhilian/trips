@@ -88,7 +88,7 @@ class Index extends My_Controller {
 
 		//	底部数据
 		$where = [];
-		$where['where'][] = "id = 6 and state = 1";
+		$where['where'][] = "id = 8 and state = 1";
 		$other = $this->other->get_list($where);
 		$index_bootm = '';
 		foreach ($other as $item)
