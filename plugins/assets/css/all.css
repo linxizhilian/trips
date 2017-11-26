@@ -1043,3 +1043,11 @@ body .navbar .navbar-header {
   line-height: 1.5;
   color: #666;
 }
+.trips-index-bottom {
+  margin: 20px 0 !important;
+  background-color: #e6e6e6;
+}
+
+.page-header {
+  margin-top: 20px;
+}
