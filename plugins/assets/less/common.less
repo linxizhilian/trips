@@ -8,11 +8,20 @@
 html {
 	width: 100%;
 	height: 100%;
+	background-color: #f3f3f3;
 }
 ul,ol,li {
 	list-style: none;
 	list-style-position: outside
 }
+ul {
+	&.list-style-dot {
+		li {
+			list-style: disc;
+		}
+	}
+}
+
 body {
 	font-family: @fontFamily;
 	overflow-x: hidden;
@@ -531,5 +540,44 @@ button > .caret .sort-default {
 		content: "";
 		display: block;
 		clear: both;
+	}
+}
+
+
+.flex {
+	display: flex;
+	&.flex-column {
+		flex-direction: column;
+	}
+	&.flex-x-y-justify {
+		justify-content: center;
+		align-items: center;
+	}
+	.flex-item {
+		flex: 1;
+	}
+	.flex-item-d1 {
+		flex: .1;
+	}
+	.flex-item-d2 {
+		flex: .2;
+	}
+	.flex-item-d2d5 {
+		flex: .25;
+	}
+	.flex-item-d5 {
+		flex: .5;
+	}
+	.flex-item-d6d5 {
+		flex: .65;
+	}
+	.flex-item-d8 {
+		flex: .8;
+	}
+	.flex-item-d8d5 {
+		flex: .85;
+	}
+	.flex-item-d9 {
+		flex: .9;
 	}
 }

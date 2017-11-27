@@ -190,7 +190,6 @@ body {
       height: 600px;
     }
     .masonry-container {
-      margin-top: 20px;
       max-width: 1380px;
       .title-name{
         width: 100%;
@@ -544,6 +543,39 @@ img {
   transition: all 1s;
   &.hover {
     transform: scale(1.2, 1.2);
+
+  }
+}
+
+.main-category {
+  .media-container { // 旅游项目列表
+    .tour-item {
+      margin: 25px 0;
+      border-bottom: 1px solid #ddd;
+      .tour-item-hd {
+        position: relative;
+        overflow: hidden;
+        height: 350px;
+        img {
+          min-width: 100%;
+          min-height: 100%;
+          border-radius: 10px;
+          .img-center();
+        }
+      }
+      .tour-item-bd {
+        padding: 0 15px 15px;
+        font-size: 1.6rem;
+        ul {
+          li {
+            margin: 15px 0;
+          }
+        }
+      }
+      &:hover {
+        background-color: #f3f3f3;
+      }
+    }
 
   }
 }

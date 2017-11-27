@@ -33,15 +33,28 @@
   z-index: 1;
   transform: translateX(-50%);
 }
+.img-center {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  margin: auto;
+}
 html {
   width: 100%;
   height: 100%;
+  background-color: #f3f3f3;
 }
 ul,
 ol,
 li {
   list-style: none;
   list-style-position: outside;
+}
+ul.list-style-dot li {
+  list-style: disc;
 }
 body {
   font-family: "Calibre", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -523,6 +536,43 @@ button > .caret .sort-default {
   display: block;
   clear: both;
 }
+.flex {
+  display: flex;
+}
+.flex.flex-column {
+  flex-direction: column;
+}
+.flex.flex-x-y-justify {
+  justify-content: center;
+  align-items: center;
+}
+.flex .flex-item {
+  flex: 1;
+}
+.flex .flex-item-d1 {
+  flex: .1;
+}
+.flex .flex-item-d2 {
+  flex: .2;
+}
+.flex .flex-item-d2d5 {
+  flex: .25;
+}
+.flex .flex-item-d5 {
+  flex: .5;
+}
+.flex .flex-item-d6d5 {
+  flex: .65;
+}
+.flex .flex-item-d8 {
+  flex: .8;
+}
+.flex .flex-item-d8d5 {
+  flex: .85;
+}
+.flex .flex-item-d9 {
+  flex: .9;
+}
 
 /**
   * 页面样式
@@ -559,6 +609,15 @@ button > .caret .sort-default {
   left: 50%;
   z-index: 1;
   transform: translateX(-50%);
+}
+.img-center {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  margin: auto;
 }
 body .navbar .navbar-header {
   background: url(../images/logo.png) no-repeat center left !important;
@@ -735,7 +794,6 @@ body .navbar .navbar-header {
     height: 600px;
   }
   #index .masonry-container {
-    margin-top: 20px;
     max-width: 1380px;
   }
   #index .masonry-container .title-name {
@@ -1052,4 +1110,35 @@ img {
 }
 img.hover {
   transform: scale(1.2, 1.2);
+}
+.main-category .media-container .tour-item {
+  margin: 25px 0;
+  border-bottom: 1px solid #ddd;
+}
+.main-category .media-container .tour-item .tour-item-hd {
+  position: relative;
+  overflow: hidden;
+  height: 350px;
+}
+.main-category .media-container .tour-item .tour-item-hd img {
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  margin: auto;
+}
+.main-category .media-container .tour-item .tour-item-bd {
+  padding: 0 15px 15px;
+  font-size: 1.6rem;
+}
+.main-category .media-container .tour-item .tour-item-bd ul li {
+  margin: 15px 0;
+}
+.main-category .media-container .tour-item:hover {
+  background-color: #f3f3f3;
 }
