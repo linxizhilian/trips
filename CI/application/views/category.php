@@ -166,7 +166,7 @@ $this->load->view('header');
 							<li><strong>Available:</strong> Daily</li>
 							<li><strong>Duration:</strong> Beijing Four Full Days</li>
 							<li><strong>Starts/ends:</strong> On your request</li>
-							<li><strong>Attractions:</strong> The Great Wall at Mutianyu, Tian’anmen Square, the Forbidden City, Temple of Heaven, Olympic Stadiums, Summer Palace; Lama Temple, Jingshan Park, Beihai Park, Confucius Temple, Beijing Zoo (Panda House), National Museum, Acrobatic show or Kongfu show</li>
+							<li><strong>Attractions:</strong> The Great Wall at Mutianyu, Tian’anmen Square, the Forbidden City, Temple of Heaven, Olympic Stadiums, Summer Palace; Lama Temple, Jingshan Park, Beihai Park, Confucius Temple, Beijing Zoo (Panda House), National Museum, Acrobatic show or Kongfu showThe Great Wall at Mutianyu, Tian’anmen Square, the Forbidden City, Temple of Heaven, Olympic Stadiums, Summer Palace; Lama Temple, Jingshan Park, Beihai Park, Confucius Temple, Beijing Zoo (Panda House), National Museum, Acrobatic show or Kongfu showThe Great Wall at Mutianyu, Tian’anmen Square, the Forbidden City, Temple of Heaven, Olympic Stadiums, Summer Palace; Lama Temple, Jingshan Park, Beihai Park, Confucius Temple, Beijing Zoo (Panda House), National Museum, Acrobatic show or Kongfu showThe Great Wall at Mutianyu, Tian’anmen Square, the Forbidden City, Temple of Heaven, Olympic Stadiums, Summer Palace; Lama Temple, Jingshan Park, Beihai Park, Confucius Temple, Beijing Zoo (Panda House), National Museum, Acrobatic show or Kongfu showThe Great Wall at Mutianyu, Tian’anmen Square, the Forbidden City, Temple of Heaven, Olympic Stadiums, Summer Palace; Lama Temple, </li>
 						</ul>
 					</div>
 				</div>
