@@ -62,7 +62,7 @@ class My_Controller extends CI_Controller {
 		{
 			$dir1 = substr($md5, 0, 2);
 			$dir2 = substr($md5, 2, 2);
-			$url = "http://" . $domain . "/thumb/" . $thumberConf . "/" . $dir1 . "/" . $dir2 . "/" . $md5 . ",c_fill,";
+			$url = "https://" . $domain . "/thumb/" . $thumberConf . "/" . $dir1 . "/" . $dir2 . "/" . $md5 . ",c_fill,";
 		}
 		else
 		{
@@ -74,7 +74,7 @@ class My_Controller extends CI_Controller {
 			$dirname = isset($p['dirname']) ? $p['dirname'] : "";
 			$url = $dirname . '/' . $p['filename'];
 			$url = ltrim($url,'.');
-			$url = 'http://' . $domain . '/thumb/' . $thumberConf  . $url . ',c_fill,';
+			$url = 'https://' . $domain . '/thumb/' . $thumberConf  . $url . ',c_fill,';
 		}
 		return $url;
 	}
