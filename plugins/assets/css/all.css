@@ -1113,6 +1113,9 @@ body .navbar .navbar-header {
 .article-container .baike .article-nav-bar ul li.active {
   color: #ff8100;
 }
+.article-container .baike .article-nav-bar ul li:hover {
+  background-color: #f3f3f3;
+}
 .article-container .baike .common {
   position: relative;
   color: #0B90C4;
