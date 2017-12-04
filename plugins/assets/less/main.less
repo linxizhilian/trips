@@ -247,6 +247,7 @@ body {
       .baike {
         .article-nav-bar {
           width: 0 !important;
+          z-index: -1;
         }
         .common {
           padding-left: 10px !important;
@@ -500,6 +501,7 @@ body {
     .baike {
       .article-nav-bar {
         width: 0 !important;
+        z-index: -1;
       }
       .common {
         padding-left: 10px !important;
@@ -521,20 +523,19 @@ body {
     .article-nav-bar {
       position: fixed;
       width: 200px;
-      color: #1f8c22;
+      color: #9a9a9a;
+      font-size: 1.3em;
+      font-weight: 300;
       ul {
         padding-left: 0;
         li {
           height: 44px;
           line-height: 44px;
-          color: #fff;
           margin-bottom: 2px;
           cursor: pointer;
-          background-color: #FFB974;
-          font-size: 16px;
-          font-weight: bold;
+          background-color: transparent;
           &.active {
-            background-color: #FB8818;
+            color: #ff8100;
           }
         }
       }
