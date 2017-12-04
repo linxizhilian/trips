@@ -21,7 +21,7 @@ $this->load->view('header');
 				<div class="carousel-inner" role="listbox">
 					<?php foreach ($pics as $key => $value): ?>
 						<div class="item active">
-							<img class="lazy_src" img_src="<?php echo $value ?>" alt="...">
+							<img animal class="lazy_src" img_src="<?php echo $value ?>" alt="...">
 							<div class="carousel-caption">
 							</div>
 						</div>

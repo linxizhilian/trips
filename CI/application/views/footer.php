@@ -91,6 +91,12 @@
 			$(this).removeClass('hover')
 		})
 
+		$('#homepage-header .link-container').on("mouseover", function (e) {
+			$(this).children("ul").addClass("hover")
+		})
+		$('#homepage-header .link-container').on("mouseout", function (e) {
+			$(this).children("ul").removeClass("hover")
+		})
 	});
 	$(window).resize(function() {
 		autoFixFooter()

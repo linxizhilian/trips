@@ -10,7 +10,16 @@
 		<div class="header-linkbin">
 			<div class="new-links">
 				<div class="link-container active"><a href="/Index/home">首页</a></div>
-				<div class="link-container active"><a href="/Category/index">分类页</a></div>
+				<div class="link-container active">
+<!--					<a href="/Category/index"></a>-->
+					<a id="category-bar" href="/Category/index">分类页</a>
+					<ul class="category-menu">
+						<li><a href="/Category/1">今日推荐</a></li>
+						<li><a href="/Category/2">Day Tour</a></li>
+						<li><a href="/Category/3">Day Over</a></li>
+						<li><a href="/Category/4">Hiking</a></li>
+					</ul>
+				</div>
 				<div class="link-container active"><a href="/Articles/index">文章页</a></div>
 				<div class="link-container active"><a href="/Articles/index">我的信息</a></div>
 				<div class="link-container active"><a href="/Articles/index">宣&emsp;&emsp;言</a></div>
@@ -34,7 +43,15 @@
 	<div class="menu-group-content-header"><i class="glyphicon glyphicon-remove menu-content-close cursor-pointer" aria-hidden="true"></i></div>
 	<ul class="menu-slider-list">
 		<li class="link-container cursor-pointer"><a href="/Index/home">首页</a></li>
-		<li class="link-container cursor-pointer"><a href="/Category/index">分类页</a></li>
+<!--		/Category/index-->
+		<li class="link-container cursor-pointer"><a href="/Category/index">分类页</a>
+			<ul class="category-menu-mini">
+				<li><a href="/Category/1">今日推荐</a></li>
+				<li><a href="/Category/2">Day Tour</a></li>
+				<li><a href="/Category/3">Day Over</a></li>
+				<li><a href="/Category/4">Hiking</a></li>
+			</ul>
+		</li>
 		<li class="link-container cursor-pointer"><a href="/Articles/index">文章页</a></li>
 		<li class="link-container cursor-pointer"><a href="/Articles/index">我的信息</a></li>
 		<li class="link-container cursor-pointer"><a href="/Articles/index">宣&emsp;&emsp;言</a></li>

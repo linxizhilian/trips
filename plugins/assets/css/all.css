@@ -680,15 +680,42 @@ body .navbar .navbar-header {
   line-height: 1em;
   position: relative;
   display: inline-block;
-  margin-bottom: 0.7em;
+  padding-bottom: 0.7em;
 }
 #homepage-header .header-linkbin .link-container a {
+  position: relative;
   display: inline-block;
   padding: 0.7em 1em 0 1em;
   text-decoration: none;
 }
 #homepage-header .header-linkbin .link-container a:hover {
   color: #ff8100;
+}
+#homepage-header .header-linkbin .link-container .category-menu {
+  display: none;
+  position: absolute;
+  top: 2.4em;
+  width: 100px;
+  left: 0;
+  padding: 0;
+  box-shadow: 1px 2px 1px 1px #999;
+  background-color: #fff;
+}
+#homepage-header .header-linkbin .link-container .category-menu.hover {
+  display: block;
+}
+#homepage-header .header-linkbin .link-container .category-menu li {
+  padding-bottom: 0.7em;
+  border: 1px solid #f3f3f3;
+}
+#homepage-header .header-linkbin .link-container .category-menu li:last-child {
+  border-bottom: 0;
+}
+#homepage-header .header-linkbin .link-container .category-menu li a {
+  line-height: 1.5em;
+}
+#homepage-header .header-linkbin .link-container .category-menu li:hover {
+  background-color: #f3f3f3;
 }
 #homepage-header a {
   /*color: #ff8100;*/
@@ -986,6 +1013,13 @@ body .navbar .navbar-header {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
+.menu-slider-list li .category-menu-mini {
+  font-size: .6em;
+  color: inherit;
+}
+.menu-slider-list li .category-menu-mini a {
+  line-height: 1.2em;
+}
 .menu-slider-list .menu-contact-us {
   margin-top: 30px;
 }
@@ -1108,7 +1142,7 @@ body .navbar .navbar-header {
 img {
   transition: all 1s;
 }
-img.hover {
+img[animal].hover {
   transform: scale(1.2, 1.2);
 }
 .main-category .media-container .tour-item {

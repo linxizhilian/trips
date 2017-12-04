@@ -17,17 +17,17 @@ $this->load->view('header');
 				</ol>
 				<div class="carousel-inner" role="listbox">
 					<div class="item active">
-						<img src="/plugins/assets/images/1.jpeg" alt="...">
+						<img animal src="/plugins/assets/images/1.jpeg" alt="...">
 						<div class="carousel-caption">
 						</div>
 					</div>
 					<div class="item">
-						<img src="/plugins/assets/images/3.jpeg" alt="...">
+						<img animal src="/plugins/assets/images/3.jpeg" alt="...">
 						<div class="carousel-caption">
 						</div>
 					</div>
 					<div class="item">
-						<img src="/plugins/assets/images/7.jpeg" alt="...">
+						<img animal src="/plugins/assets/images/7.jpeg" alt="...">
 						<div class="carousel-caption">
 						</div>
 					</div>
@@ -52,7 +52,7 @@ $this->load->view('header');
 			<div class="media-container">
 				<div class="tour-item clear">
 					<div class="tour-item-hd col-sm-12 col-md-5 col-lg-5">
-						<img src="http://p1.so.qhimgs1.com/t0166e87962ad045a41.jpg" alt="景点图">
+						<img animal src="http://p1.so.qhimgs1.com/t0166e87962ad045a41.jpg" alt="景点图">
 					</div>
 					<div class="tour-item-bd col-sm-12 col-md-7 col-lg-7">
 						<h3>Beijing Private 1-Day Tour (Forbidden City＋Great Wall)</h3>
@@ -67,7 +67,7 @@ $this->load->view('header');
 				</div>
 				<div class="tour-item clear">
 					<div class="tour-item-hd col-sm-12 col-md-5 col-lg-5">
-						<img src="http://picture.youth.cn/qtdb/201703/W020170304317792550271.jpg" alt="景点图">
+						<img animal src="http://picture.youth.cn/qtdb/201703/W020170304317792550271.jpg" alt="景点图">
 					</div>
 					<div class="tour-item-bd col-sm-12 col-md-7 col-lg-7">
 						<h3>Beijing Private 1-Day Tour (Forbidden City＋Great Wall)</h3>
@@ -82,7 +82,7 @@ $this->load->view('header');
 				</div>
 				<div class="tour-item clear">
 					<div class="tour-item-hd col-sm-12 col-md-5 col-lg-5">
-						<img src="http://localhost/plugins/assets/images/1.jpeg" alt="景点图">
+						<img animal src="http://localhost/plugins/assets/images/1.jpeg" alt="景点图">
 					</div>
 					<div class="tour-item-bd col-sm-12 col-md-7 col-lg-7">
 						<h3>Beijing Private 1-Day Tour (Forbidden City＋Great Wall)</h3>
@@ -97,7 +97,7 @@ $this->load->view('header');
 				</div>
 				<div class="tour-item clear">
 					<div class="tour-item-hd col-sm-12 col-md-5 col-lg-5">
-						<img src="http://p1.so.qhimgs1.com/t0166e87962ad045a41.jpg" alt="景点图">
+						<img animal src="http://p1.so.qhimgs1.com/t0166e87962ad045a41.jpg" alt="景点图">
 					</div>
 					<div class="tour-item-bd col-sm-12 col-md-7 col-lg-7">
 						<h3>Beijing Private 1-Day Tour (Forbidden City＋Great Wall)</h3>
@@ -112,7 +112,7 @@ $this->load->view('header');
 				</div>
 				<div class="tour-item clear">
 					<div class="tour-item-hd col-sm-12 col-md-5 col-lg-5">
-						<img src="http://p1.so.qhimgs1.com/t0166e87962ad045a41.jpg" alt="景点图">
+						<img animal src="http://p1.so.qhimgs1.com/t0166e87962ad045a41.jpg" alt="景点图">
 					</div>
 					<div class="tour-item-bd col-sm-12 col-md-7 col-lg-7">
 						<h3>Beijing Private 1-Day Tour (Forbidden City＋Great Wall)</h3>
@@ -127,7 +127,7 @@ $this->load->view('header');
 				</div>
 				<div class="tour-item clear">
 					<div class="tour-item-hd col-sm-12 col-md-5 col-lg-5">
-						<img src="http://p1.so.qhimgs1.com/t0166e87962ad045a41.jpg" alt="景点图">
+						<img animal src="http://p1.so.qhimgs1.com/t0166e87962ad045a41.jpg" alt="景点图">
 					</div>
 					<div class="tour-item-bd col-sm-12 col-md-7 col-lg-7">
 						<h3>Beijing Private 1-Day Tour (Forbidden City＋Great Wall)</h3>
@@ -142,7 +142,7 @@ $this->load->view('header');
 				</div>
 				<div class="tour-item clear">
 					<div class="tour-item-hd col-sm-12 col-md-5 col-lg-5">
-						<img src="http://localhost/plugins/assets/images/1.jpeg" alt="景点图">
+						<img animal src="http://localhost/plugins/assets/images/1.jpeg" alt="景点图">
 					</div>
 					<div class="tour-item-bd col-sm-12 col-md-7 col-lg-7">
 						<h3>Beijing Private 1-Day Tour (Forbidden City＋Great Wall)</h3>
@@ -157,7 +157,7 @@ $this->load->view('header');
 				</div>
 				<div class="tour-item clear">
 					<div class="tour-item-hd col-sm-12 col-md-5 col-lg-5">
-						<img src="http://p1.so.qhimgs1.com/t0166e87962ad045a41.jpg" alt="景点图">
+						<img animal src="http://p1.so.qhimgs1.com/t0166e87962ad045a41.jpg" alt="景点图">
 					</div>
 					<div class="tour-item-bd col-sm-12 col-md-7 col-lg-7">
 						<h3>Beijing Private 1-Day Tour (Forbidden City＋Great Wall)</h3>

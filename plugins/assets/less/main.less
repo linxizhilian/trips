@@ -76,16 +76,42 @@ body {
     line-height: 1em;
     position: relative;
     display: inline-block;
-    margin-bottom: 0.7em;
-
+    padding-bottom: 0.7em;
     a {
+      position: relative;
       display: inline-block;
       padding: 0.7em 1em 0 1em;
       text-decoration: none;
-
       &:hover {
         color: #ff8100;
       }
+    }
+    .category-menu {
+      display: none;
+      position: absolute;
+      top: 2.4em;
+      width: 100px;
+      left: 0;
+      padding: 0;
+      box-shadow: 1px 2px 1px 1px #999;
+      background-color: #fff;
+      &.hover {
+        display: block;
+      }
+      li {
+        padding-bottom: 0.7em;
+        border: 1px solid #f3f3f3;
+        &:last-child {
+          border-bottom: 0;
+        }
+        a {
+          line-height: 1.5em;
+        }
+        &:hover {
+          background-color: #f3f3f3;
+        }
+      }
+
     }
 
   }
@@ -164,7 +190,7 @@ body {
         }
       }
     }
-    
+
   }
   // cat
   .cat-6 {
@@ -397,6 +423,13 @@ body {
         outline-offset: -2px;
       }
     }
+    .category-menu-mini {
+      font-size: .6em;
+      color: inherit;
+      a {
+        line-height: 1.2em;
+      }
+    }
   }
   .menu-contact-us {
     margin-top: 30px;
@@ -541,9 +574,8 @@ body {
 
 img {
   transition: all 1s;
-  &.hover {
+  &[animal].hover {
     transform: scale(1.2, 1.2);
-
   }
 }
 
