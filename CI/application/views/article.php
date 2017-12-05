@@ -14,14 +14,14 @@ $this->load->view('header');
 			?>
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
-					<ol data-target="#carousel-example-generic" data-slide-to="0" class="active"></ol>
-					<ol data-target="#carousel-example-generic" data-slide-to="1"></ol>
-					<ol data-target="#carousel-example-generic" data-slide-to="2"></ol>
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
 				</ol>
 				<div class="carousel-inner" role="listbox">
 					<?php foreach ($pics as $key => $value): ?>
-						<div class="item active">
-							<img animal class="lazy_src" img_src="<?php echo $value ?>" alt="...">
+						<div class="item <?php if ($key == 0) echo "active";?>">
+							<img class="lazy_src" img_src="<?php echo $value ?>" alt="...">
 							<div class="carousel-caption">
 							</div>
 						</div>
