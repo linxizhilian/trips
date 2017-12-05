@@ -21,7 +21,7 @@
 					</ul>
 				</div>
 				<div class="link-container active"><a href="/Articles/index">文章页</a></div>
-				<div class="link-container active"><a href="/Articles/index">我的信息</a></div>
+				<div class="link-container active"><a href="/Articles/index">精彩瞬间</a></div>
 				<div class="link-container active"><a href="/Articles/index">宣&emsp;&emsp;言</a></div>
 				<div class="link-container active"><a href="/Articles/index">关于我们</a></div>
 			</div>
@@ -53,7 +53,7 @@
 			</ul>
 		</li>
 		<li class="link-container cursor-pointer"><a href="/Articles/index">文章页</a></li>
-		<li class="link-container cursor-pointer"><a href="/Articles/index">我的信息</a></li>
+		<li class="link-container cursor-pointer"><a href="/Articles/index">精彩瞬间</a></li>
 		<li class="link-container cursor-pointer"><a href="/Articles/index">宣&emsp;&emsp;言</a></li>
 		<li class="link-container cursor-pointer"><a href="/Articles/index">关于我们</a></li>
 		<div class="menu-contact-us">
