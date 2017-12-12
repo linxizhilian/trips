@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Category extends CI_Controller {
+class Category extends My_Controller {
 
 	/**
 	 * Home Page for this controller.
@@ -20,6 +20,30 @@ class Category extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('category');
+		$category_id = $this->uri->segment(3, 0);
+		$where1['fields'] = 'id';
+		if (empty($category_id))
+		{
+			$where1['where'][] = ' state = 1';
+		}else{
+			$where1['where'][] = ' state = 1 and categoryid = '.$category_id;
+		}
+
+		$article_id = $this->article->get_list($where1);
+		if (empty($article_id))
+		{
+			$data['empty'] = true;
+			$where2['where'][] = ' state = 1';
+			$article_id = $this->article->get_list($where2);
+		}
+		foreach ($article_id as $item)
+		{
+			$article_ids[] = $item['id'];
+		}
+		$article = $this->get_article_by_aids($article_ids);
+
+		$data['article'] = $article;
+		$data['all_category_nav'] = $this->get_all_category();
+		$this->load->view('category',$data);
 	}
 }

@@ -50,126 +50,27 @@ $this->load->view('header');
 
 			<!-- 分类列表 -->
 			<div class="media-container">
-				<div class="tour-item clear">
-					<div class="tour-item-hd col-sm-12 col-md-5 col-lg-5">
-						<img animal src="http://p1.so.qhimgs1.com/t0166e87962ad045a41.jpg" alt="景点图">
-					</div>
-					<div class="tour-item-bd col-sm-12 col-md-7 col-lg-7">
-						<h3>Beijing Private 1-Day Tour (Forbidden City＋Great Wall)</h3>
-						<ul class="list-style-dot">
-							<li>Tour code: CL-D-04B</li>
-							<li>Available: Daily</li>
-							<li>Duration: Beijing Four Full Days</li>
-							<li>Starts/ends: On your request</li>
-							<li>Attractions: The Great Wall at Mutianyu, Tian’anmen Square, the Forbidden City, Temple of Heaven, Olympic Stadiums, Summer Palace; Lama Temple, Jingshan Park, Beihai Park, Confucius Temple, Beijing Zoo (Panda House), National Museum, Acrobatic show or Kongfu show</li>
-						</ul>
-					</div>
-				</div>
-				<div class="tour-item clear">
-					<div class="tour-item-hd col-sm-12 col-md-5 col-lg-5">
-						<img animal src="http://picture.youth.cn/qtdb/201703/W020170304317792550271.jpg" alt="景点图">
-					</div>
-					<div class="tour-item-bd col-sm-12 col-md-7 col-lg-7">
-						<h3>Beijing Private 1-Day Tour (Forbidden City＋Great Wall)</h3>
-						<ul class="list-style-dot">
-							<li>Tour code: CL-D-04B</li>
-							<li>Available: Daily</li>
-							<li>Duration: Beijing Four Full Days</li>
-							<li>Starts/ends: On your request</li>
-							<li>Attractions: The Great Wall at Mutianyu, Tian’anmen Square, the Forbidden City, Temple of Heaven, Olympic Stadiums, Summer Palace; Lama Temple, Jingshan Park, Beihai Park, Confucius Temple, Beijing Zoo (Panda House), National Museum, Acrobatic show or Kongfu show</li>
-						</ul>
-					</div>
-				</div>
-				<div class="tour-item clear">
-					<div class="tour-item-hd col-sm-12 col-md-5 col-lg-5">
-						<img animal src="http://localhost/plugins/assets/images/1.jpeg" alt="景点图">
-					</div>
-					<div class="tour-item-bd col-sm-12 col-md-7 col-lg-7">
-						<h3>Beijing Private 1-Day Tour (Forbidden City＋Great Wall)</h3>
-						<ul class="list-style-dot">
-							<li><strong>Tour code:</strong> CL-D-04B</li>
-							<li><strong>Available:</strong> Daily</li>
-							<li><strong>Duration:</strong> Beijing Four Full Days</li>
-							<li><strong>Starts/ends:</strong> On your request</li>
-							<li><strong>Attractions:</strong> The Great Wall at Mutianyu, Tian’anmen Square, the Forbidden City, Temple of Heaven, Olympic Stadiums, Summer Palace; Lama Temple, Jingshan Park, Beihai Park, Confucius Temple, Beijing Zoo (Panda House), National Museum, Acrobatic show or Kongfu show</li>
-						</ul>
-					</div>
-				</div>
-				<div class="tour-item clear">
-					<div class="tour-item-hd col-sm-12 col-md-5 col-lg-5">
-						<img animal src="http://p1.so.qhimgs1.com/t0166e87962ad045a41.jpg" alt="景点图">
-					</div>
-					<div class="tour-item-bd col-sm-12 col-md-7 col-lg-7">
-						<h3>Beijing Private 1-Day Tour (Forbidden City＋Great Wall)</h3>
-						<ul class="list-style-dot">
-							<li><strong>Tour code:</strong> CL-D-04B</li>
-							<li><strong>Available:</strong> Daily</li>
-							<li><strong>Duration:</strong> Beijing Four Full Days</li>
-							<li><strong>Starts/ends:</strong> On your request</li>
-							<li><strong>Attractions:</strong> The Great Wall at Mutianyu, Tian’anmen Square, the Forbidden City, Temple of Heaven, Olympic Stadiums, Summer Palace; Lama Temple, Jingshan Park, Beihai Park, Confucius Temple, Beijing Zoo (Panda House), National Museum, Acrobatic show or Kongfu show</li>
-						</ul>
-					</div>
-				</div>
-				<div class="tour-item clear">
-					<div class="tour-item-hd col-sm-12 col-md-5 col-lg-5">
-						<img animal src="http://p1.so.qhimgs1.com/t0166e87962ad045a41.jpg" alt="景点图">
-					</div>
-					<div class="tour-item-bd col-sm-12 col-md-7 col-lg-7">
-						<h3>Beijing Private 1-Day Tour (Forbidden City＋Great Wall)</h3>
-						<ul class="list-style-dot">
-							<li><strong>Tour code:</strong> CL-D-04B</li>
-							<li><strong>Available:</strong> Daily</li>
-							<li><strong>Duration:</strong> Beijing Four Full Days</li>
-							<li><strong>Starts/ends:</strong> On your request</li>
-							<li><strong>Attractions:</strong> The Great Wall at Mutianyu, Tian’anmen Square, the Forbidden City, Temple of Heaven, Olympic Stadiums, Summer Palace; Lama Temple, Jingshan Park, Beihai Park, Confucius Temple, Beijing Zoo (Panda House), National Museum, Acrobatic show or Kongfu show</li>
-						</ul>
-					</div>
-				</div>
-				<div class="tour-item clear">
-					<div class="tour-item-hd col-sm-12 col-md-5 col-lg-5">
-						<img animal src="http://p1.so.qhimgs1.com/t0166e87962ad045a41.jpg" alt="景点图">
-					</div>
-					<div class="tour-item-bd col-sm-12 col-md-7 col-lg-7">
-						<h3>Beijing Private 1-Day Tour (Forbidden City＋Great Wall)</h3>
-						<ul class="list-style-dot">
-							<li><strong>Tour code:</strong> CL-D-04B</li>
-							<li><strong>Available:</strong> Daily</li>
-							<li><strong>Duration:</strong> Beijing Four Full Days</li>
-							<li><strong>Starts/ends:</strong> On your request</li>
-							<li><strong>Attractions:</strong> The Great Wall at Mutianyu, Tian’anmen Square, the Forbidden City, Temple of Heaven, Olympic Stadiums, Summer Palace; Lama Temple, Jingshan Park, Beihai Park, Confucius Temple, Beijing Zoo (Panda House), National Museum, Acrobatic show or Kongfu show</li>
-						</ul>
-					</div>
-				</div>
-				<div class="tour-item clear">
-					<div class="tour-item-hd col-sm-12 col-md-5 col-lg-5">
-						<img animal src="http://localhost/plugins/assets/images/1.jpeg" alt="景点图">
-					</div>
-					<div class="tour-item-bd col-sm-12 col-md-7 col-lg-7">
-						<h3>Beijing Private 1-Day Tour (Forbidden City＋Great Wall)</h3>
-						<ul class="list-style-dot">
-							<li><strong>Tour code:</strong> CL-D-04B</li>
-							<li><strong>Available:</strong> Daily</li>
-							<li><strong>Duration:</strong> Beijing Four Full Days</li>
-							<li><strong>Starts/ends:</strong> On your request</li>
-							<li><strong>Attractions:</strong> The Great Wall at Mutianyu, Tian’anmen Square, the Forbidden City, Temple of Heaven, Olympic Stadiums, Summer Palace; Lama Temple, Jingshan Park, Beihai Park, Confucius Temple, Beijing Zoo (Panda House), National Museum, Acrobatic show or Kongfu show</li>
-						</ul>
-					</div>
-				</div>
-				<div class="tour-item clear">
-					<div class="tour-item-hd col-sm-12 col-md-5 col-lg-5">
-						<img animal src="http://p1.so.qhimgs1.com/t0166e87962ad045a41.jpg" alt="景点图">
-					</div>
-					<div class="tour-item-bd col-sm-12 col-md-7 col-lg-7">
-						<h3>Beijing Private 1-Day Tour (Forbidden City＋Great Wall)</h3>
-						<ul class="list-style-dot">
-							<li><strong>Tour code:</strong> CL-D-04B</li>
-							<li><strong>Available:</strong> Daily</li>
-							<li><strong>Duration:</strong> Beijing Four Full Days</li>
-							<li><strong>Starts/ends:</strong> On your request</li>
-							<li><strong>Attractions:</strong> The Great Wall at Mutianyu, Tian’anmen Square, the Forbidden City, Temple of Heaven, Olympic Stadiums, Summer Palace; Lama Temple, Jingshan Park, Beihai Park, Confucius Temple, Beijing Zoo (Panda House), National Museum, Acrobatic show or Kongfu showThe Great Wall at Mutianyu, Tian’anmen Square, the Forbidden City, Temple of Heaven, Olympic Stadiums, Summer Palace; Lama Temple, Jingshan Park, Beihai Park, Confucius Temple, Beijing Zoo (Panda House), National Museum, Acrobatic show or Kongfu showThe Great Wall at Mutianyu, Tian’anmen Square, the Forbidden City, Temple of Heaven, Olympic Stadiums, Summer Palace; Lama Temple, Jingshan Park, Beihai Park, Confucius Temple, Beijing Zoo (Panda House), National Museum, Acrobatic show or Kongfu showThe Great Wall at Mutianyu, Tian’anmen Square, the Forbidden City, Temple of Heaven, Olympic Stadiums, Summer Palace; Lama Temple, Jingshan Park, Beihai Park, Confucius Temple, Beijing Zoo (Panda House), National Museum, Acrobatic show or Kongfu showThe Great Wall at Mutianyu, Tian’anmen Square, the Forbidden City, Temple of Heaven, Olympic Stadiums, Summer Palace; Lama Temple, </li>
-						</ul>
-					</div>
-				</div>
+                <?php if (isset($empty)) echo "本分类暂无文章,以下是全部文章";?>
+
+				<?php foreach ($article as $key => $aid):?>
+                <a target="_blank" href="<?php echo $aid['article_url']?>">
+                    <div class="tour-item clear">
+                        <div class="tour-item-hd col-sm-12 col-md-5 col-lg-5">
+                            <img animal class="lazy_src" img_src="<?php echo $aid['img_url']?>" alt="<?php echo $aid['instruction']?>">
+                        </div>
+                        <div class="tour-item-bd col-sm-12 col-md-7 col-lg-7">
+                            <h3><?php echo $aid['instruction']?></h3>
+                            <ul class="list-style-dot">
+                                <li>Tour code: CL-D-04B</li>
+                                <li>Available: Daily</li>
+                                <li>Duration: Beijing Four Full Days</li>
+                                <li>Starts/ends: On your request</li>
+                                <li>Attractions: The Great Wall at Mutianyu, Tian’anmen Square, the Forbidden City, Temple of Heaven, Olympic Stadiums, Summer Palace; Lama Temple, Jingshan Park, Beihai Park, Confucius Temple, Beijing Zoo (Panda House), National Museum, Acrobatic show or Kongfu show</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+				<?php endforeach; ?>
 			</div>
 
 		</div>

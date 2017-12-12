@@ -79,4 +79,21 @@ class My_Controller extends CI_Controller {
 		return $url;
 	}
 
+	//	获取所有分类信息
+	public function get_all_category()
+	{
+		$where1['where'][] = ' state = 1';
+		$all_category = $this->category->get_list($where1);
+		$arr_no = [1,7,11];
+		foreach ($all_category as $key => $item)
+		{
+			$all_category[$key]['url'] = '/Category/index/'.$item['id'];
+			if (in_array($item['id'],$arr_no))
+			{
+				unset($all_category[$key]);
+			}
+		}
+		return $all_category;
+	}
+
 }

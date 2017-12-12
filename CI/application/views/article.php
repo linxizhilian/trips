@@ -48,10 +48,11 @@ $this->load->view('header');
 
 			<!--content start-->
 			<div>
-				<pre>
+
 					>>>>>>>>>>>>>>>>> 我是谁，我在哪儿
-					<?php echo empty($title_tag['content']) ? '' : $title_tag['content']; ?>
-				</pre>
+                <ul class="list-style-dot">
+					<?php echo empty($title_tag['content']) ? '' : preg_replace("/<p.*?>|<\/p>/is","", $title_tag['content']);; ?>
+                </ul>
 			</div>
 
 			<div style="text-align: center">

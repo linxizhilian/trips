@@ -11,10 +11,10 @@ $this->load->view('header');
 
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					<?php foreach ($lunbo as $key => $aid):?>
+					<li data-target="#carousel-example-generic" data-slide-to="<?php echo $key;?>" <?php if($key ==0) echo 'class="active"';?>></li>
+					<?php endforeach; ?>
+
 				</ol>
 				<div class="carousel-inner" role="listbox">
 					<?php foreach ($lunbo as $key => $aid):?>

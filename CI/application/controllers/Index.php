@@ -21,7 +21,6 @@ class Index extends My_Controller {
 
     public function __construct(){
         parent::__construct();
-
     }
 
 	public function home()
@@ -101,6 +100,7 @@ class Index extends My_Controller {
 		$data['index_bootm'] = $index_bootm;
 		$data['article'] = $article;
 		$data['all_category'] = $all_category;
+		$data['all_category_nav'] = $this->get_all_category();
 //        get_list_by_pid
 		$this->load->view('index',$data);
 	}

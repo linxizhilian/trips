@@ -66,6 +66,7 @@ class Articles extends My_Controller {
         $data['title_tag'] = $title_tag;
         $data['part'] = $part;
         $data['all_content'] = $all_content;
+		$data['all_category_nav'] = $this->get_all_category();
 		$this->load->view('article',$data);
 	}
 }

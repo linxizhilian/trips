@@ -14,13 +14,13 @@
 <!--					<a href="/Category/index"></a>-->
 					<a id="category-bar" href="/Category/index">分类页</a>
 					<ul class="category-menu">
-						<li><a href="/Category/1">今日推荐</a></li>
-						<li><a href="/Category/2">Day Tour</a></li>
-						<li><a href="/Category/3">Day Over</a></li>
-						<li><a href="/Category/4">Hiking</a></li>
+
+						<?php foreach ($all_category_nav as  $cat):?>
+						<li><a href="<?php echo $cat['url']?>"><?php echo $cat['category']?></a></li>
+						<?php endforeach; ?>
+
 					</ul>
 				</div>
-				<div class="link-container active"><a href="/Articles/index">文章页</a></div>
 				<div class="link-container active"><a href="/Articles/index">精彩瞬间</a></div>
 				<div class="link-container active"><a href="/Articles/index">宣&emsp;&emsp;言</a></div>
 				<div class="link-container active"><a href="/Articles/index">关于我们</a></div>
