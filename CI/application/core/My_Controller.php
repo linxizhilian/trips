@@ -43,7 +43,7 @@ class My_Controller extends CI_Controller {
 
 		foreach ($res as $key => $value)
 		{
-			$value['img_url'] = $this->get_img_url($value['picname']);
+			$value['img_url'] = $this->get_img_url($value['picname'],'img.beijingdrivertour.com');
 			$value['article_url'] = '/Articles/index/'.$value['id'].'.html';
 			$tmp[$value['id']] = $value;
 		}
@@ -51,7 +51,7 @@ class My_Controller extends CI_Controller {
 	}
 
 	//	处理图片地址
-	public function get_img_url($md5, $height = 'h_240', $width = 'w_360', $ext = 'jpg', $thumberConf = 'f', $domain = 'img.pangzer.com')
+	public function get_img_url($md5,$domain = 'img.pangzer.com', $height = 'h_240', $width = 'w_360', $ext = 'jpg', $thumberConf = 'f')
 	{
 		if (empty($md5))
 		{
